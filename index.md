@@ -3,5 +3,6 @@
 - git
 	- github blog build
 	- [note1](https://dsm9966.github.io/notebook.github.io/1)
+	- [note2](https://dsm9966.github.io/notebook.github.io/2)
 - linux
 - hadoop
