@@ -6,4 +6,5 @@
 - linux
 	- [linux1](https://dsm9966.github.io/notebook.github.io/3)
 	- [linux2](https://dsm9966.github.io/notebook.github.io/4)
+	- [linux3](https://dsm9966.github.io/notebook.github.io/5)
 - hadoop
