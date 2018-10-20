@@ -4,7 +4,7 @@
 	- [git1](https://dsm9966.github.io/notebook.github.io/1)
 	- [git2](https://dsm9966.github.io/notebook.github.io/2)
 - linux
-	- [linux1](https://dsm9966.github.io/notebook.github.io/3)
-	- [linux2](https://dsm9966.github.io/notebook.github.io/4)
-	- [linux3](https://dsm9966.github.io/notebook.github.io/5)
+	- [系统命令](https://dsm9966.github.io/notebook.github.io/3)
+	- [通用命令](https://dsm9966.github.io/notebook.github.io/4)
+	- [vi编辑器](https://dsm9966.github.io/notebook.github.io/5)
 - hadoop
