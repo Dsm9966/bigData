@@ -8,4 +8,5 @@
 	- [通用命令](https://dsm9966.github.io/notebook.github.io/4)
 	- [vi编辑器](https://dsm9966.github.io/notebook.github.io/5)
 	- [用户和组](https://dsm9966.github.io/notebook.github.io/6)
+	- [权限管理](https://dsm9966.github.io/notebook.github.io/7)
 - hadoop
