@@ -7,4 +7,5 @@
 	- [系统命令](https://dsm9966.github.io/notebook.github.io/3)
 	- [通用命令](https://dsm9966.github.io/notebook.github.io/4)
 	- [vi编辑器](https://dsm9966.github.io/notebook.github.io/5)
+	- [用户和组](https://dsm9966.github.io/notebook.github.io/6)
 - hadoop
