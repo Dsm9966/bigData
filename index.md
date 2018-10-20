@@ -1,5 +1,6 @@
+
 # 欢迎访问dsm.flog
-## 点击下面链接，将进入对应的博客
+
 - git
 	- [git1](https://dsm9966.github.io/notebook.github.io/1)
 	- [git2](https://dsm9966.github.io/notebook.github.io/2)
@@ -9,7 +10,7 @@
 	- [vi编辑器](https://dsm9966.github.io/notebook.github.io/5)
 	- [用户和组](https://dsm9966.github.io/notebook.github.io/6)
 	- [权限管理](https://dsm9966.github.io/notebook.github.io/7)
--shell
-	-[正则表达式](https://dsm9966.github.io/notebook.github.io/8)
+- shell
+	- [正则表达式](https://dsm9966.github.io/notebook.github.io/8)
 - 配置
-	-[tomcat](https://dsm9966.github.io/notebook.github.io/tomcat)
+	- [tomcat](https://dsm9966.github.io/notebook.github.io/tomcat)
