@@ -12,9 +12,7 @@
 	- [权限管理](https://dsm9966.github.io/notebook.github.io/7)
 	- [正则表达式](https://dsm9966.github.io/notebook.github.io/8)
 	- [sed](https://dsm9966.github.io/notebook.github.io/9)
-- hadoop
 - shell
 	- [正则表达式](https://dsm9966.github.io/notebook.github.io/8)
 - 配置
 	- [tomcat](https://dsm9966.github.io/notebook.github.io/tomcat)
->>>>>>> 548d9239e7d5851f4575404eae71a7cc063ad6ec
