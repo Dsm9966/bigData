@@ -14,6 +14,6 @@
 - shell
 	- [正则表达式](https://dsm9966.github.io/notebook.github.io/8)
 	- [sed](https://dsm9966.github.io/notebook.github.io/9)
-	- [awk](https://dsm9966.github.io/notebook.github.io/9)
+	- [awk](https://dsm9966.github.io/notebook.github.io/10)
 - 配置
 	- [tomcat](https://dsm9966.github.io/notebook.github.io/tomcat)
