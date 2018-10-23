@@ -10,12 +10,14 @@
 	- [vi编辑器](https://dsm9966.github.io/notebook/linux/5)
 	- [用户和组](https://dsm9966.github.io/notebook/linux/6)
 	- [权限管理](https://dsm9966.github.io/notebook/linux/7)
+	- [正则表达式](https://dsm9966.github.io/notebook/linux/8)
+	- [sed](https://dsm9966.github.io/notebook/linux/9)
+	- [awk](https://dsm9966.github.io/notebook/linux/10)
+- shell
+
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
-- shell
-	- [正则表达式](https://dsm9966.github.io/notebook/shell/8)
-	- [sed](https://dsm9966.github.io/notebook/shell/9)
-	- [awk](https://dsm9966.github.io/notebook/shell/10)
+	
 - 配置
 	- [tomcat](https://dsm9966.github.io/notebook/enviro/tomcat)
 
