@@ -20,4 +20,5 @@
 	
 - 配置
 	- [tomcat](https://dsm9966.github.io/notebook/enviro/tomcat)
+	- [jdkandhadoop](https://dsm9966.github.io/notebook/enviro/jdkandhadoop)
 
