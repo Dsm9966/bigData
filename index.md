@@ -14,8 +14,8 @@
 	- [sed](https://dsm9966.github.io/notebook/linux/9)
 	- [awk](https://dsm9966.github.io/notebook/linux/10)
 - shell
-	- [bash](https://dsm9966.github.io/notebook/linux/11)
-	- [shell](https://dsm9966.github.io/notebook/linux/12)
+	- [bash](https://dsm9966.github.io/notebook/shell/11)
+	- [shell](https://dsm9966.github.io/notebook/shell/12)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	
