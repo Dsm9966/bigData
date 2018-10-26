@@ -16,10 +16,14 @@
 - shell
 	- [bash](https://dsm9966.github.io/notebook/shell/11)
 	- [shell](https://dsm9966.github.io/notebook/shell/12)
+- hadoop
+	-[hadoop]
+	
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	
 - 配置
 	- [tomcat](https://dsm9966.github.io/notebook/enviro/tomcat)
-	- [jdkandhadoop](https://dsm9966.github.io/notebook/enviro/jdkandhadoop)
+	- [单节点环境](https://dsm9966.github.io/notebook/enviro/jdkandhadoop)
+	- [伪分布](https://dsm9966.github.io/notebook/enviro/hadoop)
 
