@@ -9,7 +9,7 @@ export JAVA_HOME=$(pwd)
 export CLASSPATH=$:CLASSPATH:$JAVA_HOME/lib/
 export PATH=$PATH:$JAVA_HOME/bin
 
-###hadoop
+### hadoop
 
 java环境配置基础上
 tar -zxvf hadoop压缩包
