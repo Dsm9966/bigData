@@ -17,7 +17,7 @@
 	- [bash](https://dsm9966.github.io/notebook/shell/11)
 	- [shell](https://dsm9966.github.io/notebook/shell/12)
 - hadoop
-	-[hadoop](https://dsm9966.github.io/notebook/hadoop/13)
+	- [hadoop](https://dsm9966.github.io/notebook/hadoop/13)
 	
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
