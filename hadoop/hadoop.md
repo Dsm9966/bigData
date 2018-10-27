@@ -1,4 +1,27 @@
 
 ### bigdata
+* 核心特征(5v)：
+  * volume 数据量大
+  * variety 多样化
+  * value 低价值密度
+  * velocity 速度快
+  * veracity 真实性
 
-### hadoop
+### hadoop基础了解
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-516883c8151b2def.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* HDFS:分布式存储系统
+* YARN:资源管理系统
+* MapReduce:分布式计算框架
+
+* RPC 远程过程调用，为客户端和服务器通信进行传递
+
+
+### hadoop对hdfs操作
+
+* 
+  
+
+
+
