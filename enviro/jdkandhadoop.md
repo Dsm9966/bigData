@@ -20,3 +20,8 @@ java环境配置：
        * PATH=原来内容:$HAOOP_HOME/bin:$ HAOOP_HOME/sbin 
 * 或者 /etc/profile
        * PATH=$PATH:$JAVA_HOME/bin:$HAOOP_HOME/bin:$ HAOOP_HOME/sbin 
+* 测试
+
+![image.png](https://upload-images.jianshu.io/upload_images/14498135-1e858515d16ed507.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/14498135-97da3f98dbf48206.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
