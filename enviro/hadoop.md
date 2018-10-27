@@ -49,6 +49,11 @@
 * 若出现关闭后仍有除jsp进程存在，或者进程号被占用：
    * netstat -tunlp`|`grep 端口号 查看端口是否被占用
    * kill -9 端口号 杀死进程
+   
+   相关文档：
+   
+   * [Hadoop基础](https://dsm9966.github.io/notebook/enviro/hadoop.docx)
+
  
 
 
