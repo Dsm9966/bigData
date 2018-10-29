@@ -8,7 +8,7 @@
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-06905a1cf11f2ed9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
   * namenode的/etc/profile粘贴到datanode中
- * vim hadoop-2.7.3/etc/hadoop/slaves --只放置datanode的ip
+ * vim hadoop-2.7.3/etc/hadoop/slaves --只放置datanode的ip,让namenode知道datanode
  
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-f923792a17599a05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
