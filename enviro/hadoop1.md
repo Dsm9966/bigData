@@ -36,9 +36,9 @@
   
 * 免密    
     
-  * ssh -keygen
-  * ssh-copy-id 用户名@ip
-  * .ssh/id_rsa_pub >> .ssh/authorized_keys
+  * ssh -keygen 生成秘钥
+  * ssh-copy-id 用户名@ip 选择免密的用户
+  * .ssh/id_rsa_pub >> .ssh/authorized_keys 将秘钥保存到本地
    
    
    
