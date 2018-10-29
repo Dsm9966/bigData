@@ -40,6 +40,22 @@
   * ssh-copy-id 用户名@ip 选择免密的用户
   * .ssh/id_rsa_pub >> .ssh/authorized_keys 将秘钥保存到本地
    
+* 遇到问题
+ * 安全问题
+   解决方法：hdfs dfsadmin -safemode leave
+ * namenode和datanode的clusterID不统一问题  
+    原因：
+   ![1111.png](https://upload-images.jianshu.io/upload_images/14466577-843e6b0626095d0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   
+    解决方法：
+    
+   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-07ea84ac1c01619f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
+  如果再次查询VERSION，需要退出所在的current目录下，因为该目录已经删除
+   
+   最后，重新启动就好~~~
+   
+   
    
    
   
