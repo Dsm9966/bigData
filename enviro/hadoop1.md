@@ -10,7 +10,7 @@
   * namenode的/etc/profile粘贴到datanode中
  * vim hadoop-2.7.3/etc/hadoop/slaves --只放置datanode的ip,让namenode知道datanode
  
-  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-f923792a17599a05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-f923792a17599a05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
 * 可以用namenode启动datanode...........
 * 问题：datanode无法注册到namenode中：
