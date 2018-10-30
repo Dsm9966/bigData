@@ -18,8 +18,8 @@
 	- [shell](https://dsm9966.github.io/notebook/shell/12)
 - hadoop
 	- [hadoop](https://dsm9966.github.io/notebook/hadoop/13)
-	- [读写流程](https://dsm9966.github.io/notebook/hadoop/14.1)
-	- [nameNode工作机制](https://dsm9966.github.io/notebook/hadoop/14.2)
+	- [hdfs读写流程](https://dsm9966.github.io/notebook/hadoop/14.1)
+	- [hdfs工作机制](https://dsm9966.github.io/notebook/hadoop/14.2)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
