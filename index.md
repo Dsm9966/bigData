@@ -22,6 +22,7 @@
 	- [hdfs工作机制](https://dsm9966.github.io/notebook/hadoop/14.2)
 - eclipse
 	- [hdfs和本地的沟通](https://dsm9966.github.io/notebook/eclipse/15)
+	- [本地创建hdfs](https://dsm9966.github.io/notebook/eclipse/16)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
