@@ -20,6 +20,8 @@
 	- [hadoop](https://dsm9966.github.io/notebook/hadoop/13)
 	- [hdfs读写流程](https://dsm9966.github.io/notebook/hadoop/14.1)
 	- [hdfs工作机制](https://dsm9966.github.io/notebook/hadoop/14.2)
+- eclipse
+	-[hdfs和本地的沟通](https://dsm9966.github.io/notebook/eclipse/15)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
