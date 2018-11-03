@@ -24,6 +24,7 @@
 	- [hdfs和本地的沟通](https://dsm9966.github.io/notebook/eclipse/15)
 	- [本地创建hdfs](https://dsm9966.github.io/notebook/eclipse/16)
 	- [MapReudce理论](https://dsm9966.github.io/notebook/eclipse/17)
+	- [MapReudce实例](https://dsm9966.github.io/notebook/eclipse/18)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
