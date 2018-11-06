@@ -1,4 +1,8 @@
 ## 实例补充的知识点
+## Combiner 合并
+   
+   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-89b24510c3f888ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 #### 分区：
 
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-0b45be4d24e6f167.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
