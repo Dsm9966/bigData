@@ -20,7 +20,7 @@
 	- [hadoop](https://dsm9966.github.io/notebook/hadoop/13)
 	- [hdfs读写流程](https://dsm9966.github.io/notebook/hadoop/14.1)
 	- [hdfs工作机制](https://dsm9966.github.io/notebook/hadoop/14.2)
-- eclipse
+- mapreduce
 	- [hdfs和本地的沟通](https://dsm9966.github.io/notebook/eclipse/15)
 	- [本地创建hdfs](https://dsm9966.github.io/notebook/eclipse/16)
 	- [MapReudce理论](https://dsm9966.github.io/notebook/eclipse/17)
