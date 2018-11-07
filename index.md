@@ -21,10 +21,10 @@
 	- [hdfs读写流程](https://dsm9966.github.io/notebook/hadoop/14.1)
 	- [hdfs工作机制](https://dsm9966.github.io/notebook/hadoop/14.2)
 - mapreduce
-	- [hdfs和本地的沟通](https://dsm9966.github.io/notebook/mapreduce/15)
-	- [本地创建hdfs](https://dsm9966.github.io/notebook/mapreduce/16)
-	- [MapReudce理论](https://dsm9966.github.io/notebook/mapreduce/17)
-	- [MapReudce实例](https://dsm9966.github.io/notebook/mapreduce/18)
+	- [hdfs和本地的沟通](https://dsm9966.github.io/notebook/mapReduce/15)
+	- [本地创建hdfs](https://dsm9966.github.io/notebook/mapReduce/16)
+	- [MapReudce理论](https://dsm9966.github.io/notebook/mapReduce/17)
+	- [MapReudce实例](https://dsm9966.github.io/notebook/mapReduce/18)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
