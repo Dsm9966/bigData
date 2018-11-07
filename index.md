@@ -25,6 +25,9 @@
 	- [本地创建hdfs](https://dsm9966.github.io/notebook/mapReduce/16)
 	- [MapReudce理论](https://dsm9966.github.io/notebook/mapReduce/17)
 	- [MapReudce实例](https://dsm9966.github.io/notebook/mapReduce/18)
+	- [实例补充知识点](https://dsm9966.github.io/notebook/mapReduce/19)
+	- [MapReudce原理](https://dsm9966.github.io/notebook/mapReduce/20)
+	- [MapReudce与Yarn](https://dsm9966.github.io/notebook/mapReduce/21)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
