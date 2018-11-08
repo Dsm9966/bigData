@@ -28,7 +28,7 @@
 	- [实例补充知识点](https://dsm9966.github.io/notebook/mapReduce/19)
 	- [MapReudce原理](https://dsm9966.github.io/notebook/mapReduce/20)
 	- [MapReudce与Yarn](https://dsm9966.github.io/notebook/mapReduce/21)
-	- [大文档](https://dsm9966.github.io/notebook/mapReduce/03.docx)
+	- [最终解释文档](https://dsm9966.github.io/notebook/mapReduce/03.docx)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
