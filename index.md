@@ -27,6 +27,7 @@
 	- [MapReudce实例](https://dsm9966.github.io/notebook/mapReduce/18)
 	- [MapReudce原理](https://dsm9966.github.io/notebook/mapReduce/19)
 	- [MapReudce与Yarn](https://dsm9966.github.io/notebook/mapReduce/20)
+	- [reduce端的Join](https://dsm9966.github.io/notebook/mapReduce/21)
 	- [最终解释文档](https://dsm9966.github.io/notebook/mapReduce/03.docx)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
