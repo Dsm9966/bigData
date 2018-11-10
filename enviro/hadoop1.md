@@ -49,6 +49,9 @@
    
     解决方法：
     
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-4283a1fd41cb8ded.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+    
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-07ea84ac1c01619f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
   如果再次查询VERSION，需要退出所在的current目录下，因为该目录已经删除
