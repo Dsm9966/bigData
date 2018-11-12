@@ -39,3 +39,5 @@
 	- [单节点环境](https://dsm9966.github.io/notebook/enviro/jdkandhadoop)
 	- [伪分布](https://dsm9966.github.io/notebook/enviro/hadoop)
 	- [完全分布](https://dsm9966.github.io/notebook/enviro/hadoop1)
+	- [mysql](https://dsm9966.github.io/notebook/enviro/mysql)
+	- [hive](https://dsm9966.github.io/notebook/enviro/hive)
