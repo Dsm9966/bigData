@@ -1,4 +1,4 @@
-## Mysql配置
+## Mysql
 
 #### 1 sudo yum -y install wget
 #### 2 wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
@@ -18,13 +18,13 @@
 
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-f7084238c6d71a88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-####  cd conf(pwd:/home/hadoop/hive/conf)
-#### touch hive-site.xml
-####  vim hive-site.xml
+#### 7 cd conf(pwd:/home/hadoop/hive/conf)
+#### 8 touch hive-site.xml
+#### 9 vim hive-site.xml
 
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c2b9a8de43e1ac37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
       
-#### hive 
+#### 10 hive 
 
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-8c3b4c2cb04ef4f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
