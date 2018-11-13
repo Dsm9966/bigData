@@ -2,9 +2,11 @@
 #### 启动mysql基础上，在mysql内的操作：
 #### 1 mysql -u root -p(刚开始没有密码就登陆成功)
 #### 2 MySQL> UPDATE mysql.user SET Password=PASSWORD('新密码') where USER='root';
+   #### 注意：新密码必须和下面操作中10步骤中密码相同
 #### 3 MySQL> flush privileges;
-#### 4 MySQL> exit
-#### 5 mysql -u root -p(再次登录，输入密码登陆成功)
+#### 4 MySQL> mysql -u root -p(再次登录，输入密码登陆成功)
+#### 5 MySQL> exit
+####  在命令行开始配置Hive
 #### 1 tar -zxf apache-hive-1.2.1-bin.tar.gz
 #### 2 mv apache-hive-1.2.1-bin hive
 #### 3 cd hive/
