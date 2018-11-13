@@ -4,7 +4,7 @@
 #### 2 MySQL> UPDATE mysql.user SET Password=PASSWORD('新密码') where USER='root';
 #### 3 MySQL> flush privileges;
 #### 4 MySQL> exit
-#### 
+#### 5 mysql -u root -p(再次登录，输入密码登陆成功)
 #### 1 tar -zxf apache-hive-1.2.1-bin.tar.gz
 #### 2 mv apache-hive-1.2.1-bin hive
 #### 3 cd hive/
@@ -23,7 +23,8 @@
 #### 10 vim hive-site.xml
 
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c2b9a8de43e1ac37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-      
+   
+#### 11 hive 检查是否存在错误
 #### 运行Navicat 
     
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-253f8e5148f19364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
