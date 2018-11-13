@@ -1,5 +1,10 @@
 ## Hive
-#### 启动mysql基础上
+#### 启动mysql基础上，在mysql内的操作：
+#### 1 mysql -u root -p(刚开始没有密码就登陆成功)
+#### 2 MySQL> UPDATE mysql.user SET Password=PASSWORD('新密码') where USER='root';
+#### 3 MySQL> flush privileges;
+#### 4 MySQL> exit
+#### 
 #### 1 tar -zxf apache-hive-1.2.1-bin.tar.gz
 #### 2 mv apache-hive-1.2.1-bin hive
 #### 3 cd hive/
