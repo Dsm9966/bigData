@@ -30,7 +30,7 @@
 
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c2b9a8de43e1ac37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
    
-#### 11 hive 检查是否存在错误
+#### 11 hive 检查是否能正常进入
 #### 运行Navicat 
     
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-253f8e5148f19364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
