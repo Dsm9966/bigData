@@ -22,7 +22,7 @@
 #### MySQL> flush privileges;
 #### MySQL> mysql -u root -p(再次登录，输入密码登陆成功)
 #### 设置mysql能够远程访问（放置mysql-connector-java-5.1.34.jar包）：
-#### （1）mysql>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'youmysqlpassword' WITH GRANT OPTION;
+#### （1）mysql>GRANT ALL PRIVILEGES ON `*`.`*` TO 'root'@'%' IDENTIFIED BY 'youmysqlpassword' WITH GRANT OPTION;
 #### （2）mysql>FLUSH PRIVILEGES
 ####  MySQL> exit   
 #### 
