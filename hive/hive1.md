@@ -1,15 +1,15 @@
 ## Hive
-#### 1 具有SQl数据库外表，只适合用来做批量海量数据统计分析
-#### 2 基于hadoop的一个数据仓库工具，实质上就是基于HDFS的MapReduce计算框架
+#### 1.具有SQl数据库外表，只适合用来做批量海量数据统计分析
+#### 2.基于hadoop的一个数据仓库工具，实质上就是基于HDFS的MapReduce计算框架
 
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-4445e2009304087a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### Hive底层将SQL语句转换成mapreduce任务运行
-#### 特点：
+* 特点：
 
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-3f2ad10cae9c5562.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### cli:终端命令行
-##### JDBC:基于JDBC操作提供的客户端，用户通过这连接至 Hive Server Web UI，通过浏览器访问Hive
-##### 元数据：存储在hive中的数据描述信息
-##### 
+  * cli:终端命令行
+  * JDBC:基于JDBC操作提供的客户端，用户通过这连接至 Hive Server Web UI，通过浏览器访问Hive
+  * 元数据：存储在hive中的数据描述信息
+  * 数据存储:
+
