@@ -1,15 +1,5 @@
 ## Hive
-### 启动mysql基础上，在mysql内的操作：
-#### 1 mysql -u root -p(刚开始没有密码就登陆成功)
-#### 2 MySQL> UPDATE mysql.user SET Password=PASSWORD('新密码') where USER='root';
-   #### 注意：新密码必须和下面操作中10步骤中密码相同
-#### 3 MySQL> flush privileges;
-#### 4 MySQL> mysql -u root -p(再次登录，输入密码登陆成功)
-#### 5 设置mysql能够远程访问：
-#### （1）mysql>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'youmysqlpassword' WITH GRANT OPTION;
-#### （2）mysql>FLUSH PRIVILEGES
-#### 6 MySQL> exit
-### 在命令行开始配置Hive
+### 在命令行开始配置Hive,服务器具有hive压缩包
 #### 1 tar -zxf apache-hive-1.2.1-bin.tar.gz
 #### 2 mv apache-hive-1.2.1-bin hive
 #### 3 cd hive/
@@ -23,6 +13,18 @@
 
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-8c3b4c2cb04ef4f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
    
+### 启动mysql基础上，在mysql内的操作：
+#### 1 mysql -u root -p(刚开始没有密码就登陆成功)
+#### 2 MySQL> UPDATE mysql.user SET Password=PASSWORD('新密码') where USER='root';
+   #### 注意：新密码必须和下面操作中10步骤中密码相同
+#### 3 MySQL> flush privileges;
+#### 4 MySQL> mysql -u root -p(再次登录，输入密码登陆成功)
+#### 5 设置mysql能够远程访问：
+#### （1）mysql>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'youmysqlpassword' WITH GRANT OPTION;
+#### （2）mysql>FLUSH PRIVILEGES
+#### 6 MySQL> exit
+####
+####  
 #### 8 cd conf(pwd:/home/hadoop/hive/conf)
 #### 9 touch hive-site.xml
 #### 10 vim hive-site.xml
