@@ -6,7 +6,7 @@
    #### 注意：新密码必须和下面操作中10步骤中密码相同
 #### 3 MySQL> flush privileges;
 #### 4 MySQL> mysql -u root -p(再次登录，输入密码登陆成功)
-#### 5 设置mysql能够远程访问：
+#### 5 设置mysql能够远程访问（放置mysql-connector-java-5.1.34.jar包）：
 #### （1）mysql>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'youmysqlpassword' WITH GRANT OPTION;
 #### （2）mysql>FLUSH PRIVILEGES
 #### 6 MySQL> exit 
