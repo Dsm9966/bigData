@@ -12,4 +12,11 @@
   * JDBC:基于JDBC操作提供的客户端，用户通过这连接至 Hive Server Web UI，通过浏览器访问Hive
   * 元数据：存储在hive中的数据描述信息
   * 数据存储:
-
+  * (1)db:在hdfs中表现为${hive.metastore.warehouse.dir}目录下一个文件夹
+  * (2)table：内表，在hdfs中表现所属db目录下一个文件夹
+  * (3)external table:外表，其数据存放位置可以在任意指定路径
+  * (4)partition:分区，在hdfs中表现为table目录下的子目录
+  * (5)bucket:桶，同一个表目录下根据hash散列之后的多个文件
+* 基本使用
+* 1 同mysql
+* 2 导入数据：
