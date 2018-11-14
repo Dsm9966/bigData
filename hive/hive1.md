@@ -17,8 +17,3 @@
   * (3)external table:外表，其数据存放位置可以在任意指定路径
   * (4)partition:分区，在hdfs中表现为table目录下的子目录
   * (5)bucket:桶，同一个表目录下根据hash散列之后的多个文件
-#### Hive基本使用
-*  同mysql
-*  导入数据：
-  * 从hdfs上导入数据：load data inpath 'hdfs上的文件路径' into table 表名;
-  * 从本地上导入数据：load data local inpath '文件路径' into table 表名;
