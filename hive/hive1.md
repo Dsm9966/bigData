@@ -10,7 +10,7 @@
 
 * cli:终端命令行
 * JDBC:基于JDBC操作提供的客户端，用户通过这连接至 Hive Server Web UI，通过浏览器访问Hive
-* 元数据：存储在hive中的数据描述信息
+* 元数据：存储在hive中的数据描述信息，hive上对应数据存储在hdfs上，这个关联我们需要继续记录
 * 数据存储:
   * (1)db:在hdfs中表现为${hive.metastore.warehouse.dir}目录下一个文件夹
   * (2)table：内表，在hdfs中表现所属db目录下一个文件夹
