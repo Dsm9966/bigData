@@ -17,13 +17,17 @@
 * 外部表
    ##### create external table 表名（列名 类型，..）
    ##### row format delimited fields terminated by '区分每一列的依据';
-   #####  location  '文件夹路径';
+   #####  location  'hdfs文件夹路径';
 * 内部表和外部表的区别：
-
+   ##### 外部表用于用于引用外部数据，也不希望对原始数据继续破坏，配合location来指定外部表要读取数据；
+   #####  删除内部表或者清空会将数据真正删除；外部表只是将表关联信息删除掉，对指定位置内容没有影响
 * 分区表
+   ##### 相当于表中又分了小表，减少查询量，提升查询效率
+   ##### 分区不是只能有一层的，可以创建多层
    ##### create table 表名（列名 类型，..）
    ##### partitioned by (列名 类型，..)列名为分区依据
    ##### row format delimited fields terminated by '区分每一列的依据';
+   ##### 创建好分区后，将数据导入要指定好对应分区
 #### DDL操作
 * 查询分区
    ##### show partitions 表名；
