@@ -32,7 +32,16 @@
 * 桶表 
 
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-957466c0eb594400.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  ##### 当向桶表添加数据时，会出现的情况：
   
+  ![1.png](https://upload-images.jianshu.io/upload_images/14466577-65aa3cd424724eed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
+  ##### 设置允许分桶（只对当前对话有效）
+  #####  set hive.enforce.bucketing=true;
+  ##### 设置分区后：
+  
+  ![2.png](https://upload-images.jianshu.io/upload_images/14466577-b0df533c5dffdf08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   
 #### DDL操作
 
 * 查询分区
@@ -42,8 +51,6 @@
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-33ff9e58fd01f155.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-8800948b28fd028f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
 
 * 修改表名
 
