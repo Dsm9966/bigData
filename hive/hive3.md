@@ -4,7 +4,7 @@
 * 数据查询
     
     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-afbb6b13348402b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+##### 
 ##### 排序区别：
 ##### order by: 全局排序，一个reduce
 ##### sort  by: 不是全局，进入reducer之前排序完成；设置mapred.reduce.tasks>1
