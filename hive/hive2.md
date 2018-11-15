@@ -8,12 +8,14 @@
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-8445a330d0d7667b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
  
 * 内部表
-   ##### create table 表名（列名 类型，..）
-   ##### row format delimited fields terminated by '区分每一列的依据';
+ 
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b30a14347c8a122d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ 
 * 外部表
-   ##### create external table 表名（列名 类型，..）
-   ##### row format delimited fields terminated by '区分每一列的依据';
-   #####  location  'hdfs文件夹路径';
+  
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-6bf8431764493534.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+   ##### 注意：location后面跟的是文件路径
    
    ![1.png](https://upload-images.jianshu.io/upload_images/14466577-d83fd422019e415d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
@@ -23,15 +25,16 @@
 * 分区表
    ##### 相当于表中又分了小表，减少查询量，提升查询效率
    ##### 分区不是只能有一层的，可以创建多层
-   ##### create table 表名（列名 类型，..）
-   ##### partitioned by (列名 类型，..)列名为分区依据
-   ##### row format delimited fields terminated by '区分每一列的依据';
    ##### 创建好分区后，将数据导入要指定好对应分区
+   
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-efff8cbd91813464.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
 * 桶表 
 
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-957466c0eb594400.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
 #### DDL操作
+
 * 查询分区
    ##### show partitions 表名；
 * 增加分区
