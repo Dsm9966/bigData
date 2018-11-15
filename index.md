@@ -13,9 +13,6 @@
 	- [正则表达式](https://dsm9966.github.io/notebook/linux/8)
 	- [sed](https://dsm9966.github.io/notebook/linux/9)
 	- [awk](https://dsm9966.github.io/notebook/linux/10)
-- shell
-	- [bash](https://dsm9966.github.io/notebook/shell/11)
-	- [shell](https://dsm9966.github.io/notebook/shell/12)
 - hadoop
 	- [hadoop](https://dsm9966.github.io/notebook/hadoop/13)
 	- [hdfs读写流程](https://dsm9966.github.io/notebook/hadoop/14.1)
@@ -30,6 +27,10 @@
 	- [reduce端的Join](https://dsm9966.github.io/notebook/mapReduce/21)
 	- [map端的Join](https://dsm9966.github.io/notebook/mapReduce/22)
 	- [最终解释文档](https://dsm9966.github.io/notebook/mapReduce/03.docx)
+- hive
+	- [hive简介](https://dsm9966.github.io/notebook/hive/hive1)
+	- [hive表操作](https://dsm9966.github.io/notebook/hive/hive2)
+	- [hive数据操作](https://dsm9966.github.io/notebook/hive/hive3)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
