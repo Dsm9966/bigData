@@ -36,21 +36,33 @@
 #### DDL操作
 
 * 查询分区
-   ##### show partitions 表名；
-* 增加分区
-   ##### alter table 表名 add partition(列名=‘ ’);
-* 删除分区
-   ##### alter table 表名 drop  partition(列名=‘ ’)；
+##### show partitions;
+* 增加/删除分区
+  
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-33ff9e58fd01f155.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-8800948b28fd028f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
 * 修改表名
-   ##### alter table 表名 rename to 新名字；
-* 增加修改/替换列
-   ##### alter table 表名 add/replace columns(列名 类型)；
+
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-d29a1673e998cfd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 增加/修改/替换列
+
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-abe9851a9ac0f5fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-47f5a37a3fb9dbc0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-69958d109089758e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 * 修改列名
-   ##### alter table 表名 change 原列名 现列名 类型；  
+
 * 删除表数据，保留结构
-   ##### truncate table 表名；
+
 * 删除表
-   ##### drop table 表名；
+
 #### DML 插入数据   
 *  插入一条数据
    ##### insert into table 表名 values( , );
