@@ -57,11 +57,13 @@
   
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-69958d109089758e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* 修改列名
-
 * 删除表数据，保留结构
 
+   ##### truncate table 表名；
+
 * 删除表
+ 
+  ##### drop table 表名；
 
 #### DML 插入数据   
 *  插入一条数据
