@@ -18,7 +18,7 @@
    ![1.png](https://upload-images.jianshu.io/upload_images/14466577-d83fd422019e415d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
 * 内部表和外部表的区别：
-   ##### 外部表用于用于引用外部数据，也不希望对原始数据继续破坏，配合location来指定外部表要读取数据；
+   ##### 外部表用于引用外部数据，也不希望对原始数据继续破坏，配合location来指定外部表要读取数据；
    #####  删除内部表或者清空会将数据真正删除；外部表只是将表关联信息删除掉，对指定位置内容没有影响
 * 分区表
    ##### 相当于表中又分了小表，减少查询量，提升查询效率
@@ -27,6 +27,8 @@
    ##### partitioned by (列名 类型，..)列名为分区依据
    ##### row format delimited fields terminated by '区分每一列的依据';
    ##### 创建好分区后，将数据导入要指定好对应分区
+   
+   
 #### DDL操作
 * 查询分区
    ##### show partitions 表名；
@@ -71,7 +73,8 @@
   
 * CTAS
 ##### create table...as select...)将hive的查询结果直接存入到一个表中
-   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-689a1d97223d6bd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-689a1d97223d6bd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
    
 
  
