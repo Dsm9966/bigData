@@ -17,6 +17,10 @@
 	- [hadoop](https://dsm9966.github.io/notebook/hadoop/13)
 	- [hdfs读写流程](https://dsm9966.github.io/notebook/hadoop/14.1)
 	- [hdfs工作机制](https://dsm9966.github.io/notebook/hadoop/14.2)
+- hive
+	- [hive简介](https://dsm9966.github.io/notebook/hive/hive1)
+	- [hive表操作](https://dsm9966.github.io/notebook/hive/hive2)
+	- [hive数据操作](https://dsm9966.github.io/notebook/hive/hive3)	
 - mapreduce
 	- [hdfs和本地的沟通](https://dsm9966.github.io/notebook/mapReduce/15)
 	- [本地创建hdfs](https://dsm9966.github.io/notebook/mapReduce/16)
@@ -27,10 +31,6 @@
 	- [reduce端的Join](https://dsm9966.github.io/notebook/mapReduce/21)
 	- [map端的Join](https://dsm9966.github.io/notebook/mapReduce/22)
 	- [最终解释文档](https://dsm9966.github.io/notebook/mapReduce/03.docx)
-- hive
-	- [hive简介](https://dsm9966.github.io/notebook/hive/hive1)
-	- [hive表操作](https://dsm9966.github.io/notebook/hive/hive2)
-	- [hive数据操作](https://dsm9966.github.io/notebook/hive/hive3)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
