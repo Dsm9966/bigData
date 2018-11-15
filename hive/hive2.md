@@ -27,8 +27,10 @@
    ##### partitioned by (列名 类型，..)列名为分区依据
    ##### row format delimited fields terminated by '区分每一列的依据';
    ##### 创建好分区后，将数据导入要指定好对应分区
-   
-   
+* 桶表 
+
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-957466c0eb594400.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
 #### DDL操作
 * 查询分区
    ##### show partitions 表名；
