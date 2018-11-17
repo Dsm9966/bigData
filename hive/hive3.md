@@ -24,10 +24,10 @@
     *  左半连接：left semi join(相当于join连接两个表后产生的数据中的左半部分)
 * 数据类型
 *  1 原子数据类型：
-        *  数值型
-        *  时间类型：timestamp时间戳；date日期，年月日组成
-        *  布尔型
-        *  字符串型
+    *  数值型
+    *  时间类型：timestamp时间戳；date日期，年月日组成
+    *  布尔型
+    *  字符串型
 *  2 复杂数据类型：
       *  数组（Array)：相同数据类型的元素组成，可以通过下标访问，从0开始
       
@@ -42,6 +42,7 @@
       *  结构体（struct）:可以包含不同类型的元素，获取元素方式‘.’,eg：user.name
       
       ![image.png](https://upload-images.jianshu.io/upload_images/14466577-d99530bca12097fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+      
 * 函数使用
 * 内置函数
     * 类型转换：select cast(数据 as 类型)(hive提供自动转换类型)
@@ -76,12 +77,12 @@
 * 条件控制函数
     * if(条件，满足条件输出内容，不满足输出内容)
     * CASE [expression]
-       * WHEN condition1 THEN result1
-       * WHEN condition2 THEN result2
-       * ...
-       * WHEN conditionn THEN resultn
-       * ELSE result
-       * END
+    * WHEN condition1 THEN result1
+    * WHEN condition2 THEN result2
+    * ...
+    * WHEN conditionn THEN resultn
+    * ELSE result
+     * END
 * 集合函数
     * array(元素) 构造数组
     * array_contains(Array<T>, value)  数组中是否包含value,返回boolean值
@@ -95,33 +96,35 @@
         * 左表是原表
         * 右表是explode(某个集合字段)之后产生的表而且这个join只在同一行的数据间进行
    
-    ![11.16.3.png](https://upload-images.jianshu.io/upload_images/14466577-f570384bf5a4824a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     ![11.16.3.png](https://upload-images.jianshu.io/upload_images/14466577-f570384bf5a4824a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
 * json解析函数：表生成函数
     * json_tuple()
     
-    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-ad2200e607fa0a66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-ad2200e607fa0a66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 窗口分析函数
     * row_number() over()分组
     
-    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-0c5421213348c18d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-0c5421213348c18d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
-    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-2f1095517ab9d7e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-2f1095517ab9d7e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
     *  sum() over() 级联求和
     *  eg:  
-    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b0572d6515898dfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    
+     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b0572d6515898dfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     
     * 目标一
     
-    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-022df6fe86b943b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-022df6fe86b943b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
-    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-7198daed3d3ea78f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-7198daed3d3ea78f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
     * 目标2
        
-    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b5d20154c062e766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b5d20154c062e766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
-    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-84e010557d687e12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-84e010557d687e12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
