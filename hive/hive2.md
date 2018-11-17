@@ -46,7 +46,7 @@
 ####  DDL操作
 
  * 查询分区
-   * show partitions;
+    * show partitions;
  * 增加/删除分区
   
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-33ff9e58fd01f155.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -75,11 +75,11 @@
 
 ####  DML操作 
  *  插入一条数据
-    * insert into table 表名 values( , );
+     * insert into table 表名 values( , );
  *  导入数据：
-    * 从hdfs上导入数据：load data inpath 'hdfs上的文件路径' into table 表名;
-    * 从本地上导入数据：load data local inpath '文件路径' into table 表名;
-    * load相当于剪切，把文件复制到表中，原文件路径下不再存在
+     * 从hdfs上导入数据：load data inpath 'hdfs上的文件路径' into table 表名;
+     * 从本地上导入数据：load data local inpath '文件路径' into table 表名;
+     * load相当于剪切，把文件复制到表中，原文件路径下不再存在
  * 导出数据：
     * insert overwrite [local] directory '路径'
     * select * from 表； 
