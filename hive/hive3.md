@@ -110,6 +110,18 @@
     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-2f1095517ab9d7e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
     *  sum() over() 级联求和
+    *  eg:  
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b0572d6515898dfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    * 目标一
     
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-022df6fe86b943b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-7198daed3d3ea78f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
+    * 目标2
+       
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b5d20154c062e766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-84e010557d687e12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
