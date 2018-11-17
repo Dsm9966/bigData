@@ -89,15 +89,14 @@
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c8b50706f3e5276b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
    * 步骤：
-    * 1 将混乱数据传入一个表
-    * 2 创建对应分区表
-    * 3 向分区表动态分区的插入数据 
-    * 3.1 如果要进行动态分区，就不要在partition(month)给分区设置固定值
-    * 3.2 默认是严格模式，不允许使用动态分区的
-    * 3.3 使用动态分区会将查询结构集最后一个作为分区条件
+     * 1 将混乱数据传入一个表
+     * 2 创建对应分区表
+     * 3 向分区表动态分区的插入数据 
+     * 3.1 如果要进行动态分区，就不要在partition(month)给分区设置固定值
+     * 3.2 默认是严格模式，不允许使用动态分区的
+     * 3.3 使用动态分区会将查询结构集最后一个作为分区条件
+     
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-f79d30bf4a1cefdd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
- 
-   
   
 * CTAS
  * create table...as select...)将hive的查询结果直接存入到一个表中
