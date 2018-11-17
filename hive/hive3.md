@@ -57,10 +57,38 @@
 * 字符串函数
     * substr(string str, int start)   截取子串,注意-->字符串索引从1开始
     * substr(string, int start, int len)
+   
+     ![11.16.1.png](https://upload-images.jianshu.io/upload_images/14466577-aa6d02fe8b9d94e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    
     * substring 同substr
     * concat()拼接
+       
+     ![11.16.2.png](https://upload-images.jianshu.io/upload_images/14466577-e9003a5220c41c91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ 
     * split(string str, string pat)  ## 切分字符串，返回数组
     
     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-702756fe976f974b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
-    
+*  时间函数  
+    * from_unixtimeunix（）时间戳转字符串
+    * unix_timestamp（）字符串格式转unix时间戳，返回值是一个长整数类型
+    * to_date()字符串转成日期date
+* 条件控制函数
+    * if(条件，满足条件输出内容，不满足输出内容)
+    * CASE [expression]
+       WHEN condition1 THEN result1
+       WHEN condition2 THEN result2
+       ...
+       WHEN conditionn THEN resultn
+       ELSE result
+       END
+* 集合函数
+    * array(元素) 构造数组
+    * array_contains(Array<T>, value)  数组中是否包含value,返回boolean值
+    * sort_array(Array<T>) 返回排序后的数组
+    * size(Array<T>)  返回一个集合的长度，int值
+ * 常见分组聚合函数
+    * sum();avg();count();max();min();distinct
+    * collect_set():将某个字段在一组中的所有值形成一个集合（数组）返回
+    * explode():行转列函数，对数组字段炸裂
+    * 
