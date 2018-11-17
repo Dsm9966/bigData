@@ -22,6 +22,10 @@
     *  左外连接：left join
     *  全连接：full join
     *  左半连接：left semi join(相当于join连接两个表后产生的数据中的左半部分)
+* in 关键字
+   
+   ![1.png](https://upload-images.jianshu.io/upload_images/14466577-915fcbd6d058d791.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   
 * 数据类型
 *  1 原子数据类型：
     *  数值型
