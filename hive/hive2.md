@@ -46,7 +46,7 @@
 ####  DDL操作
 
  * 查询分区
- * show partitions;
+   * show partitions;
  * 增加/删除分区
   
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-33ff9e58fd01f155.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -75,31 +75,31 @@
 
 ####  DML操作 
  *  插入一条数据
-   * insert into table 表名 values( , );
+    * insert into table 表名 values( , );
  *  导入数据：
-   * 从hdfs上导入数据：load data inpath 'hdfs上的文件路径' into table 表名;
-   * 从本地上导入数据：load data local inpath '文件路径' into table 表名;
-   * load相当于剪切，把文件复制到表中，原文件路径下不再存在
+    * 从hdfs上导入数据：load data inpath 'hdfs上的文件路径' into table 表名;
+    * 从本地上导入数据：load data local inpath '文件路径' into table 表名;
+    * load相当于剪切，把文件复制到表中，原文件路径下不再存在
  * 导出数据：
-   * insert overwrite [local] directory '路径'
-   * select * from 表； 
+    * insert overwrite [local] directory '路径'
+    * select * from 表； 
  * 动态分区
-   * 使用场景：当我们想要对数据分区的时候，拿到的数据未必是已经分好区的，并不能直接load进来，这个时候使用动态分区来结果
+    * 使用场景：当我们想要对数据分区的时候，拿到的数据未必是已经分好区的，并不能直接load进来，这个时候使用动态分区来结果
  
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c8b50706f3e5276b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
    * 步骤：
-     * 1 将混乱数据传入一个表
-     * 2 创建对应分区表
-     * 3 向分区表动态分区的插入数据 
-     * 3.1 如果要进行动态分区，就不要在partition(month)给分区设置固定值
-     * 3.2 默认是严格模式，不允许使用动态分区的
-     * 3.3 使用动态分区会将查询结构集最后一个作为分区条件
+      * 1 将混乱数据传入一个表
+      * 2 创建对应分区表
+      * 3 向分区表动态分区的插入数据 
+      * 3.1 如果要进行动态分区，就不要在partition(month)给分区设置固定值
+      * 3.2 默认是严格模式，不允许使用动态分区的
+      * 3.3 使用动态分区会将查询结构集最后一个作为分区条件
      
    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-f79d30bf4a1cefdd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
 * CTAS
- * create table...as select...)将hive的查询结果直接存入到一个表中
+  * create table...as select...)将hive的查询结果直接存入到一个表中
   
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-689a1d97223d6bd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
    
