@@ -21,7 +21,7 @@
 	- [hive简介](https://dsm9966.github.io/notebook/hive/hive1)
 	- [hive表操作](https://dsm9966.github.io/notebook/hive/hive2)
 	- [hive数据操作](https://dsm9966.github.io/notebook/hive/hive3)
-	- [hive文档](https://dsm9966.github.io/notebook/hive/hive.docx)
+	- [hive文档](https://dsm9966.github.io/notebook/hive/hive1.docx)
 - mapreduce
 	- [hdfs和本地的沟通](https://dsm9966.github.io/notebook/mapReduce/15)
 	- [本地创建hdfs](https://dsm9966.github.io/notebook/mapReduce/16)
