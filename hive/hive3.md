@@ -76,12 +76,12 @@
 * 条件控制函数
     * if(条件，满足条件输出内容，不满足输出内容)
     * CASE [expression]
-       WHEN condition1 THEN result1
-       WHEN condition2 THEN result2
-       ...
-       WHEN conditionn THEN resultn
-       ELSE result
-       END
+       * WHEN condition1 THEN result1
+       * WHEN condition2 THEN result2
+       * ...
+       * WHEN conditionn THEN resultn
+       * ELSE result
+       * END
 * 集合函数
     * array(元素) 构造数组
     * array_contains(Array<T>, value)  数组中是否包含value,返回boolean值
@@ -110,3 +110,6 @@
     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-2f1095517ab9d7e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     
     *  sum() over() 级联求和
+    
+    
+    
