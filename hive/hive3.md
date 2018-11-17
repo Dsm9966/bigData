@@ -91,4 +91,22 @@
     * sum();avg();count();max();min();distinct
     * collect_set():将某个字段在一组中的所有值形成一个集合（数组）返回
     * explode():行转列函数，对数组字段炸裂
-    * 
+    * lateral view 表生成函数,相当于两个表在join
+        * 左表是原表
+        * 右表是explode(某个集合字段)之后产生的表而且这个join只在同一行的数据间进行
+   
+    ![11.16.3.png](https://upload-images.jianshu.io/upload_images/14466577-f570384bf5a4824a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    
+* json解析函数：表生成函数
+    * json_tuple()
+    
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-ad2200e607fa0a66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 窗口分析函数
+    * row_number() over()分组
+    
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-0c5421213348c18d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    
+    ![image.png](https://upload-images.jianshu.io/upload_images/14466577-2f1095517ab9d7e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    
+    *  sum() over() 级联求和
