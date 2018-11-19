@@ -37,6 +37,7 @@
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
 	- [3](https://dsm9966.github.io/notebook/review/review3)
+	- [4](https://dsm9966.github.io/notebook/review/review4)
 - 配置
 	- [tomcat](https://dsm9966.github.io/notebook/enviro/tomcat)
 	- [单节点环境](https://dsm9966.github.io/notebook/enviro/jdkandhadoop)
