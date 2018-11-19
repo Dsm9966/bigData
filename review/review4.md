@@ -23,4 +23,4 @@
 * where row_num<=2;
 * row_number() over()总共做了对数据根据partition by 的属性进行分区，
 * 通过order by 对每个分区单独排序并生成一列行号
-select *,row_number() over(partition by name order by times) as row_num from shops
+
