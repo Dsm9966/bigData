@@ -16,3 +16,10 @@
 * 4.select 	
 * 5.type arr,map,struct
 * 6.function date arr,explode,表生成函数lateral view，窗口分析函数
+* select * 
+* from 
+* (select *,row number()
+* over(partition by gender order by age desc)as row_num from topn)as res
+* where row_num<=2;
+* row_number() over()总共做了对数据根据partition by 的属性进行分区，
+* 通过order by 对每个分区单独排序并生成一列行号
