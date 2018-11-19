@@ -26,6 +26,7 @@
   * 相当于表中又分了小表，减少查询量，提升查询效率
   *  分区不是只能有一层的，可以创建多层
   * 创建好分区后，将数据导入要指定好对应分区
+  * 设置允许分区： set hive.exec.dynamic.partition.mode=nonstrict;
    
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-efff8cbd91813464.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
