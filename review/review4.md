@@ -42,6 +42,7 @@
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-ff8251ec457f23f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 3.以上一步查询结果为基表，以店铺名和减出来的结果进行group by,从分组的结果中取出店铺名和分组的记录个数，也就知道了店铺连续销售天数
+，根据需求对分组条件进行筛选having
 #### select name,count(*) as res_count
 #### from
 #### (select name,times,count,date_sub(times,row_num) as diff
@@ -51,3 +52,4 @@
 #### having res_count >= 3
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-583ccbe0fbc3f93a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
