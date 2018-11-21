@@ -1,5 +1,9 @@
 ## azkaban工作流调度器
 
+### 简介 
+* 基本了解：使用job配置文件建立任务之间依赖关系，提供web用户界面并且跟踪工作流
+* 架构：Web Server;Executor Server;Mysql
+### 配置 
 * 三个压缩包：
   * azkaban-sql-script-2.5.0.tar.gz   存放了azkaban运行需要的sql（sql导入完文件就没用了）
   * azkaban-executor-server-2.5.0.tar.gz 存放执行器
@@ -65,6 +69,12 @@
 * 8.登录
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-98edbbf1ab966998.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 使用案例（文件拓展名必须为.job）
+
+`type=command`
+`command=真正的命令`
+
 
 
  
