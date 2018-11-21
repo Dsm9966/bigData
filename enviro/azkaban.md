@@ -24,4 +24,5 @@ azkaban-web-server-2.5.0.tar.gz 存放了web服务器
   ![2.png](https://upload-images.jianshu.io/upload_images/14465950-e858e16797a25f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * ssl 配置
-  
+
+#### keytool -keystore keystore -alias jetty -genkey -keyalg RSA
