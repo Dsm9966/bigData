@@ -30,14 +30,14 @@
 
 * 5.配置 web下的文件:/azkaban-web-2.5.0/conf/
    * 5.1 vim azkaban.properties
-      * 时区：Asia/Shanghai
-      * mysql:root-123-azkaban
-      * jerry:123456
+    * 时区：Asia/Shanghai
+    * mysql:root-123-azkaban
+    * jerry:123456
  
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-a98c1a0c59bae5c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
   * 5.2 vim azkaban-users.xml
-      * '<user username="admin" password="admin" roles="admin,metrics" />'
+      * '<`user username="admin" password="admin" roles="admin,metrics" /`>'
  
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b868f85d39739c9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
