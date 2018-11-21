@@ -26,3 +26,6 @@ azkaban-web-server-2.5.0.tar.gz 存放了web服务器
 * 4.ssl 配置: keytool -keystore keystore -alias jetty -genkey -keyalg RSA
  
   ![1.png](https://upload-images.jianshu.io/upload_images/14465950-0f326339302f4333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 5.配置 web下的文件:/azkaban-web-2.5.0/conf/
+ * 5.1 vim azkaban.properties
