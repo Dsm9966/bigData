@@ -19,7 +19,7 @@
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-393430c49e1f3a09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 3.mysql下执行语句：
-   * 3.1: source /home/hadoop/azkaban/azkaban-2.5.0/create-all-sql-2.5.0.sql(数据库为azkaban)
+   * 3.1: `source /home/hadoop/azkaban/azkaban-2.5.0/create-all-sql-2.5.0.sql`(数据库为azkaban)
 
 ![1.png](https://upload-images.jianshu.io/upload_images/14465950-147874b28ef63e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
@@ -27,13 +27,13 @@
   
 ![2.png](https://upload-images.jianshu.io/upload_images/14465950-e858e16797a25f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* 4.ssl 配置: keytool -keystore keystore -alias jetty -genkey -keyalg RSA
+* 4.ssl 配置: `keytool -keystore keystore -alias jetty -genkey -keyalg RSA`
   * ssl的秘钥=jerry的密码（123456）
  
 ![1.png](https://upload-images.jianshu.io/upload_images/14465950-0f326339302f4333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 5.配置 web下的文件:/azkaban-web-2.5.0/conf/
-   * 5.1 vim azkaban.properties
+   * 5.1 `vim azkaban.properties`
     * 时区：Asia/Shanghai
     * mysql:root-123-azkaban
     * jerry:123456
@@ -53,13 +53,13 @@
 
 * 7.启动服务（start/shutdown）
  * 注意：运行路径问题
-      * azkaban/azkaban-executor-2.5.0路径下：bin/azkaban-executor-start.sh
+      * azkaban/azkaban-executor-2.5.0路径下：`bin/azkaban-executor-start.sh`
  
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-a4819c13c27b1f52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-8c72e32fceda9bc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
- * azkaban/azkaban-web-2.5.0路径下：bin/azkaban-web-start.sh
+ * azkaban/azkaban-web-2.5.0路径下：`bin/azkaban-web-start.sh`
   
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-104790922d686c78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
@@ -70,10 +70,32 @@
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-98edbbf1ab966998.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 使用案例（文件拓展名必须为.job）
+### azkaban页面操作
+* 创建工程
 
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-c04525f43022df0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 上传job文件
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-e8c636cdbe7f2b5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 执行
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-af291daa5e4d3dae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+ * 绿色代表成功，蓝色是运行，红色是失败。可以查看job运行时间，依赖和日志，点击details可以查看各个job运行情况
+ * 当出现问题可以去details里面查看问题原因
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-fdb0db44122346d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+### 使用案例（文件拓展名必须为.job）
+* job文件格式：
 `type=command`
 `command=真正的命令`
+* 1.把需要运行的job放在同一文件下打成.zip的包
+* 
+
+
 
 
 
