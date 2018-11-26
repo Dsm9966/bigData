@@ -45,3 +45,4 @@
 	- [完全分布](https://dsm9966.github.io/notebook/enviro/hadoop1)
 	- [mysql](https://dsm9966.github.io/notebook/enviro/mysql)
 	- [hive](https://dsm9966.github.io/notebook/enviro/hive)
+	- [azkaban](https://dsm9966.github.io/notebook/enviro/azkaban)
