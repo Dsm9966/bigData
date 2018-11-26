@@ -84,16 +84,17 @@
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-af291daa5e4d3dae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
  * 绿色代表成功，蓝色是运行，红色是失败。可以查看job运行时间，依赖和日志，点击details可以查看各个job运行情况
+ 
  * 当出现问题可以去details里面查看问题原因
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-fdb0db44122346d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-### 使用案例（文件拓展名必须为.job）
-* job文件格式：
+### 使用案例（文件拓展名必须为.job,压缩包拓展名为.zip）
+#### command
 `type=command`
 `command=真正的命令`
 * 1.把需要运行的job放在同一文件下打成.zip的包
-* 
+*  
 
 
 
