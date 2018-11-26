@@ -99,57 +99,57 @@
 ### 使用案例（文件拓展名必须为.job,压缩包拓展名为.zip）
 #### command命令
 * 单个job
- * command.job
+  * command.job
  `type=command`
  `command=echo xxoo`
- * 压缩
+  * 压缩
  
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-1d4d49ea28a6519e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* 执行结果
+  * 执行结果
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c9507b9cb5e885d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 多个job(dependcies=job的名称,来指定我当前要执行的job依赖于哪个job，在依赖的这个job执行完后再执行我)
- * foo.job
- `type=command`
- `command=echo foo`
- * bar.job 
- `type=command`
- `dependencies=foo`
- `command=echo bar` 
+  * foo.job
+  `type=command`
+  `command=echo foo`
+  * bar.job 
+  `type=command`
+  `dependencies=foo`
+  `command=echo bar` 
  
- * 两个文件压缩成一个文件
+  * 两个文件压缩成一个文件
 
- * 执行结果
+  * 执行结果
  
- ![image.png](https://upload-images.jianshu.io/upload_images/14466577-aeb2957deef9339f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-aeb2957deef9339f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
  
- ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c40fb1bcac305f45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c40fb1bcac305f45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
  #### hdfs命令
  * hdfs
-  * mk.job(azkaban执行有自己的默认路径，为了避免错误，写自己的路径或者绝对路径)
-  `type=command`
-  `command=hadoop fs -mkdir /azkaban`
-  * 压缩
-  * 执行结果
+   * mk.job(azkaban执行有自己的默认路径，为了避免错误，写自己的路径或者绝对路径)
+   `type=command`
+   `command=hadoop fs -mkdir /azkaban`
+   * 压缩
+   * 执行结果
   
- ![image.png](https://upload-images.jianshu.io/upload_images/14466577-e039ada8fc585de7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-e039ada8fc585de7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
  
  #### linux命令
  
  #### hive命令行
  * hive -e 'mysql语句' 执行单条命令
  * hive -f '文件名' 执行文件（包含多个命令）
-  * hivef.job
-  `type=command`
-  `command=hive -f 'test.sql'`
-  * test.sql
-  `'use dsm;`
-  `create table aztest(id int,name string) row format delimited fields terminated by ',';`
-  * 两个文件一起压缩上传
-  * 执行
+   * hivef.job
+   `type=command`
+   `command=hive -f 'test.sql'`
+   * test.sql
+   `'use dsm;`
+   `create table aztest(id int,name string) row format delimited fields terminated by ',';`
+   * 两个文件一起压缩上传
+   * 执行
  #### mapreduce:jar
  * wordcount(也可以自己写代码，打jar包)
  `type=command`
