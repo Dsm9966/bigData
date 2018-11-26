@@ -19,7 +19,8 @@
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-393430c49e1f3a09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 3.mysql下执行语句：
-   * 3.1: `source /home/hadoop/azkaban/azkaban-2.5.0/create-all-sql-2.5.0.sql`(数据库为azkaban)
+   * 3.1
+#### source /home/hadoop/azkaban/azkaban-2.5.0/create-all-sql-2.5.0.sql(数据库为azkaban)
 
  ![1.png](https://upload-images.jianshu.io/upload_images/14465950-147874b28ef63e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
@@ -27,39 +28,44 @@
   
  ![2.png](https://upload-images.jianshu.io/upload_images/14465950-e858e16797a25f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* 4.ssl 配置: `keytool -keystore keystore -alias jetty -genkey -keyalg RSA`
+* 4.ssl 配置:
+#### keytool -keystore keystore -alias jetty -genkey -keyalg RSA
   * ssl的秘钥=jerry的密码（123456）
  
  ![1.png](https://upload-images.jianshu.io/upload_images/14465950-0f326339302f4333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 5.配置 web下的文件:/azkaban-web-2.5.0/conf/
-   * 5.1 `vim azkaban.properties`
-    * 时区：Asia/Shanghai
-    * mysql:root-123-azkaban
-    * jerry:123456
+   * 5.1 
+#### vim azkaban.properties
+   * 时区：Asia/Shanghai
+   * mysql:root-123-azkaban
+   * jerry:123456
  
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-a98c1a0c59bae5c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
   * 5.2 vim azkaban-users.xml
-      * '<`user username="admin" password="admin" roles="admin,metrics" /`>'
+#### <user username="admin" password="admin" roles="admin,metrics" />
  
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-b868f85d39739c9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
 * 6.配置executor:azkaban-executor-2.5.0/conf
- * 6.1 vim azkaban.properties
-      * 配置内容同5.1
+ * 6.1
+#### vim azkaban.properties
+   * 配置内容同5.1
  
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-bd6a068b5b03814f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 7.启动服务（start/shutdown）
  * 注意：运行路径问题
-      * azkaban/azkaban-executor-2.5.0路径下：`bin/azkaban-executor-start.sh`
+      * azkaban/azkaban-executor-2.5.0路径下：
+      #### bin/azkaban-executor-start.sh
  
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-a4819c13c27b1f52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-8c72e32fceda9bc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
- * azkaban/azkaban-web-2.5.0路径下：`bin/azkaban-web-start.sh`
+ * azkaban/azkaban-web-2.5.0路径下：
+ #### bin/azkaban-web-start.sh
   
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-104790922d686c78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
@@ -100,8 +106,8 @@
 #### command命令
 * 单个job
   * command.job
- `type=command`
- `command=echo xxoo`
+#### type=command
+#### command=echo xxoo
   * 压缩
  
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-1d4d49ea28a6519e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -112,12 +118,12 @@
 
 * 多个job(dependcies=job的名称,来指定我当前要执行的job依赖于哪个job，在依赖的这个job执行完后再执行我)
   * foo.job
-  `type=command`
-  `command=echo foo`
+#### type=command
+#### command=echo xxoo
   * bar.job 
-  `type=command`
-  `dependencies=foo`
-  `command=echo bar` 
+#### type=command
+#### dependencies=foo
+#### command=echo bar 
  
   * 两个文件压缩成一个文件
 
@@ -130,8 +136,8 @@
  #### hdfs命令
  * hdfs
    * mk.job(azkaban执行有自己的默认路径，为了避免错误，写自己的路径或者绝对路径)
-   `type=command`
-   `command=hadoop fs -mkdir /azkaban`
+#### type=command
+#### command=hadoop fs -mkdir /azkaban
    * 压缩
    * 执行结果
   
@@ -143,17 +149,16 @@
  * hive -e 'mysql语句' 执行单条命令
  * hive -f '文件名' 执行文件（包含多个命令）
    * hivef.job
-   `type=command`
-   `command=hive -f 'test.sql'`
+#### type=command
+#### command=hive -f 'test.sql'
    * test.sql
-   `'use dsm;`
-   `create table aztest(id int,name string) row format delimited fields terminated by ',';`
+#### use dsm;
+#### create table aztest(id int,name string) row format delimited fields terminated by ',';
    * 两个文件一起压缩上传
    * 执行
  #### mapreduce:jar
  * wordcount(也可以自己写代码，打jar包)
- `type=command`
- `command=hadoop jar hadoop-mapreduce-examples-2.6.1.jar wordcount /akinput /akoutput`
+#### type=command#### command=hadoop jar hadoop-mapreduce-examples-2.6.1.jar wordcount /akinput /akoutput
  
  * 命令中用到的要执行的jar包，在上传job时一并压缩打入
  
