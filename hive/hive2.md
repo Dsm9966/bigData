@@ -84,7 +84,7 @@
  * 导出数据：
     * insert overwrite [local] directory '路径'
     * select * from 表； 
- * 动态分区
+ * 动态分区（重难点）
     * 使用场景：当我们想要对数据分区的时候，拿到的数据未必是已经分好区的，并不能直接load进来，这个时候使用动态分区来结果
  
   ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c8b50706f3e5276b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
