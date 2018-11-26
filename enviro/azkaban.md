@@ -75,7 +75,7 @@
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c04525f43022df0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* 上传job文件
+* 上传job文件（如果原工程已经存在文件，会被替换掉）
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-e8c636cdbe7f2b5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -85,23 +85,49 @@
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-7fcf0e33204d3032.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)+
 
- * 绿色代表成功，蓝色是运行，红色是失败。可以查看job运行时间，依赖和日志，点击details可以查看各个job运行情况
+ * 绿色代表成功，蓝色是运行，红色是失败。可以查看job运行时间，依赖和日志
  
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-e79a740c9d25d8d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+
+ * 点击details可以查看各个job运行情况（可以显示出文件错误信息）
+ 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-fafec7f716c20b43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 使用案例（文件拓展名必须为.job,压缩包拓展名为.zip）
-#### command
-`type=command`
-`command=真正的命令`
-
-![image.png](https://upload-images.jianshu.io/upload_images/14466577-3a008167ad2e0cd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### command命令
+* 单个job
+ * 执行命令的文件内容
+ `type=command`
+ `command=echo xxoo`
+ * 压缩
  
  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-1d4d49ea28a6519e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+* 执行结果
+
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c9507b9cb5e885d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+* 多个job 
+ * foo.job
+ `type=command`
+ `command=echo foo`
+ * bar.job 依赖关系，后执行
+ `type=command`
+ `dependencies=foo`（依赖于谁？？）
+ `command=echo bar` 
+ 
+ * 两个文件压缩成一个文件
+
+ * 执行结果
+ 
+  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-aeb2957deef9339f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ 
+ ![image.png](https://upload-images.jianshu.io/upload_images/14466577-c40fb1bcac305f45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+ #### 
+ 
+ 
 
 
 
