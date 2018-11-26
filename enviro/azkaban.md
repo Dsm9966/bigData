@@ -91,17 +91,16 @@
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-fafec7f716c20b43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
- * 当出现问题可以去details里面查看问题原因
- 
-![image.png](https://upload-images.jianshu.io/upload_images/14466577-fdb0db44122346d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
 ### 使用案例（文件拓展名必须为.job,压缩包拓展名为.zip）
 #### command
 `type=command`
 `command=真正的命令`
-* 1.把需要运行的job放在同一文件下打成.zip的包
-*  
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-3a008167ad2e0cd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ 
+ ![image.png](https://upload-images.jianshu.io/upload_images/14466577-1d4d49ea28a6519e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-c9507b9cb5e885d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
