@@ -81,10 +81,17 @@
 
 * 执行
 
-
-
  * 绿色代表成功，蓝色是运行，红色是失败。可以查看job运行时间，依赖和日志，点击details可以查看各个job运行情况
  
+ ![image.png](https://upload-images.jianshu.io/upload_images/14466577-d3fc572548892098.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-7fcf0e33204d3032.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-e79a740c9d25d8d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-fafec7f716c20b43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
  * 当出现问题可以去details里面查看问题原因
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-fdb0db44122346d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
