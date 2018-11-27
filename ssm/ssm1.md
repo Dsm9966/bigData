@@ -1,4 +1,4 @@
-## 请求响应 
+## 请求
 ### 基础了解
 * jsp 能执行java代码的html
 * maven jar包管理工具
@@ -59,6 +59,11 @@
 * data:发送到服务器的数据。将自动转换为请求字符串格式
 * success:succ 回调函数;由服务器返回，并根据 dataType 参数进行处理后的数据；描述状态的字符串				
 * $.ajax(obj)用于配置 Ajax 请求的键值对集合
+
+### json 校验格式化工具
+* 使用fastjson-1.2.47.jar-->json
+* toJSONString(Object object)-->转换化成json类型字符串
+* parse()-->将字符串转化成对象（保存方式：键值对）
 
 
 
