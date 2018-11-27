@@ -64,6 +64,26 @@
 * 使用fastjson-1.2.47.jar-->json
 * toJSONString(Object object)-->转换化成json类型字符串
 * parse()-->将字符串转化成对象（保存方式：键值对）
+### ajax和json实例
+* eg:注册用户时，检查用户是否存在，存在则显示存在;不存在则添加到数据库并显示注册成功
+* 页面
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-e3fec278a0ed5ef3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 用ajax以异步请求方式向服务器发出请求
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-3f7395c521eab63f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 服务器
+* (1)servlet层
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-7b2b919e37c8d8ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* (2)dao层
+	* findUserByName(String name)返回List<User>
+	* regUser(String name,String pwd)向数据库内添加数据
+* ajax内的success回调函数
+	
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-e8e0e8fe5c8d8030.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
