@@ -1,4 +1,4 @@
-## 同步/异步请求
+## servlet/ajax
 ### 基础了解
 * jsp 能执行java代码的html
 * maven jar包管理工具
