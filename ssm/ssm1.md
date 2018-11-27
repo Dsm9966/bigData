@@ -67,6 +67,7 @@
 ### ajax和json实例
 * eg:注册用户时，检查用户是否存在，存在则显示存在;不存在则添加到数据库并显示注册成功
 * 页面
+
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-e3fec278a0ed5ef3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 用ajax以异步请求方式向服务器发出请求
