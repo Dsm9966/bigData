@@ -45,15 +45,15 @@
 除了发请求，还有对页面进行一些操作
 
 形式：
-#### function succ(data){
-#### }
-#### var obj={
-#### url:"",
-#### method:"",
-#### data:,
-#### success:succ 				
-#### }
-#### $.ajax(obj)
+### function succ(data){
+### }
+### var obj={
+### url:"",
+### method:"",
+### data:,
+### success:succ 				
+### }
+### $.ajax(obj)
 * url:发送请求的地址
 * method:"",请求方式
 * data:发送到服务器的数据。将自动转换为请求字符串格式
