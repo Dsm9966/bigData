@@ -41,11 +41,11 @@
 
 
 ### ajax异步请求
+
 除了发请求，还有对页面进行一些操作
 
 形式：
-#### function succ(data){回调函数
-	
+#### function succ(data){
 #### }
 #### var obj={
 #### url:"",
@@ -57,7 +57,7 @@
 * url:发送请求的地址
 * method:"",请求方式
 * data:发送到服务器的数据。将自动转换为请求字符串格式
-* success:succ 由服务器返回，并根据 dataType 参数进行处理后的数据；描述状态的字符串				
+* success:succ 回调函数;由服务器返回，并根据 dataType 参数进行处理后的数据；描述状态的字符串				
 * $.ajax(obj)用于配置 Ajax 请求的键值对集合
 
 
