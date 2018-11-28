@@ -1,7 +1,5 @@
-## SpringBoot搭建
+## spingboot-SSM搭建
 
-## SpringBoot
-### spingboot-SSM搭建
 * 1.创建springboot项目
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-043fe9ee8455b0e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
