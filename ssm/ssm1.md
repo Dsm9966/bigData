@@ -4,7 +4,7 @@
 * maven jar包管理工具
 * SSM:Spring+SpringMVC+MyBatis
 
-springboot-->SpringMVC
+springboot-->SSM
 * @RestController
 * @RequestMapping()设置请求访问路径
 
