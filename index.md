@@ -36,6 +36,7 @@
 	- [最终解释文档](https://dsm9966.github.io/notebook/mapReduce/03.docx)
 - SSM
 	- [servlet/ajax](https://dsm9966.github.io/notebook/ssm/ssm1)
+	- [SpringBoot搭建](https://dsm9966.github.io/notebook/ssm/ssm2)
 	
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
