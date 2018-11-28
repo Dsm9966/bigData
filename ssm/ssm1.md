@@ -10,7 +10,7 @@ springboot-->SSM
 
 ### servlet同步请求
 * 清除缓存四种方式：
-	* tomat 右键clean
+	* tomcat 右键clean
 	* project-->clean
 	* export-->war file 
 	* servers界面右键 publish
