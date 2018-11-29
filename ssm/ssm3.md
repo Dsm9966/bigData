@@ -34,8 +34,8 @@
 	![image.png](https://upload-images.jianshu.io/upload_images/14466577-4599bb0e8290c806.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
 ## 为了区分在本地还是远端（开发环境/生产环境）方便改配置：
-### 1.application.yml总配置(去掉path) 
-### 2.创建application-dev.yml  
+### 1.application.yml总配置(去掉logging.path) 
+### 2.创建application-dev.yml (路径自己创建就好) 
 `logging:`
 	`path: D:\logger\logs`
 				
@@ -48,7 +48,30 @@
 	`active: dev/prod(上面两个文件)`
 	
 ### 注意：改配置文件后需要重新package一遍	
+## 当active: prod时
 
+* 1.把本程jar包放置到具有mysql的虚拟机上
+
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-f3e7a3172de2afff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 2.`java -jar secondboot-0.0.1-SNAPSHOT.jar `如果启动失败，提示地址已经被占用，表示开启过--->`kill -9`
+* 3.虚拟机ip:8080/.html文件,查看页面是否展示
+* 4.去设置的路径去找文件夹，看能否找到日志文件
+
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-8e5e48c462f3a511.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+	尝试list.html---不ok 因为url的问题，它查找的是虚拟机的Ip,而不是windows系统的ip
+	解决方法：更改URL--重新打jar包--上传
+	
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-564cbd8a19ad7fdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	
+	这个时候本地也可以通过该url访问远端，不过存在跨域名问题（localhsot:8080和ip:8080也是跨域名） 
+	
+	因为list.html到/user/findAll 所以在对应的方法上加@CrossOrigin
+	
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-139cd3f90e60b584.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	
+	url的ip:8080/user/list.html
 	
 	
 	
