@@ -17,6 +17,9 @@
 * spring-boot后台运行:`nohup java -jar ~/jar/secondboot-0.0.1-SNAPSHOT.jar  & ` 关闭:`kill -9`
 ### 8.跨域请求（域名=ip+port），ajax默认不允许跨域请求
 ### 如果希望实现跨域请求，找到对应的请求方法，设置上`@CrollOrigin(origins="*",maxAge=3600)`，这样这个方法就允许跨域请求了
+	
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-139cd3f90e60b584.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ## springboot启动方式：
 ### 1.执行main()方法
 ### 2.maven插件-->spring-boot-->spring-boot:run
@@ -60,19 +63,6 @@
 
 	![image.png](https://upload-images.jianshu.io/upload_images/14466577-8e5e48c462f3a511.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-	尝试list.html---不ok 因为url的问题，它查找的是虚拟机的Ip,而不是windows系统的ip
-	解决方法：更改URL--重新打jar包--上传
-	
-	![image.png](https://upload-images.jianshu.io/upload_images/14466577-564cbd8a19ad7fdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-	
-	这个时候本地也可以通过该url访问远端，不过存在跨域名问题（localhsot:8080和ip:8080也是跨域名） 
-	
-	因为list.html到/user/findAll 所以在对应的方法上加@CrossOrigin
-	
-	![image.png](https://upload-images.jianshu.io/upload_images/14466577-139cd3f90e60b584.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-	
-	url的ip:8080/user/list.html
-	
 	
 	
 	
