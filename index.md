@@ -37,7 +37,7 @@
 - SSM
 	- [servlet/ajax](https://dsm9966.github.io/notebook/ssm/ssm1)
 	- [SpringBoot搭建](https://dsm9966.github.io/notebook/ssm/ssm2)
-	
+	- [SpringBoot项目+mybatis](https://dsm9966.github.io/notebook/ssm/ssm3)
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
