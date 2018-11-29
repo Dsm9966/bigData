@@ -24,17 +24,17 @@
 ### 1.执行main()方法
 ### 2.maven插件-->spring-boot-->spring-boot:run
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/14466577-83f41fbe78d57070.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-83f41fbe78d57070.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 3.执行本项目的jar包 
 
 * 3.1用插件打出来该项目jar包，项目停止状态
 	
-	![image.png](https://upload-images.jianshu.io/upload_images/14466577-b591735799293304.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-b591735799293304.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
 * 3.2 执行jar包 `java -jar secondboot-0.0.1-SNAPSHOT.jar``  
 	
-	![image.png](https://upload-images.jianshu.io/upload_images/14466577-4599bb0e8290c806.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-4599bb0e8290c806.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
 ## 为了区分在本地还是远端（开发环境/生产环境）方便改配置：
 ### 1.application.yml总配置(去掉logging.path) 
@@ -51,17 +51,64 @@
 	`active: dev/prod(上面两个文件)`
 	
 ### 注意：改配置文件后需要重新package一遍	
-## 当active: prod时
+### 当active: prod时
 
 * 1.把本程jar包放置到具有mysql的虚拟机上
 
-	![image.png](https://upload-images.jianshu.io/upload_images/14466577-f3e7a3172de2afff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-f3e7a3172de2afff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 2.`java -jar secondboot-0.0.1-SNAPSHOT.jar `如果启动失败，提示地址已经被占用，表示开启过--->`kill -9`
 * 3.虚拟机ip:8080/.html文件,查看页面是否展示
 * 4.去设置的路径去找文件夹，看能否找到日志文件
 
-	![image.png](https://upload-images.jianshu.io/upload_images/14466577-8e5e48c462f3a511.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-8e5e48c462f3a511.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+* 5.url的ip:8080/ .html或者url
+
+## mybatis
+### UserMapper:方法名（有参/无参）
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-821a525208cfa050.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### resources/mapper/UserMapper.xml:
+
+  `<select id="" parameterType="" resultMap="">sql语句</select>`
+* id:UserMapper的方法名
+* parameterType:方法参数类型为自定义类型时需要用到
+* resultMap:为resultMap的id,resultMap中放置结果集的属性
+* sql中 where 表列名=方法参数类型为
+	* String--> #{_parameter}
+	* Integer-->#{任何字符均可}
+	* 自定义类型,添加parameterType-->#{类对应的属性名}
+* Usercontroller: 返回sql查询结果后要做的操作
+### eg1:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键，联表查询(1对多)
+* UserMapper
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-4eb04b04b8f3a277.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	
+* UserMapper.xml
+	* select
+	
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-ea06668c412bc4c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	
+	* resultMap
+	
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-b192073f2c8aae6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	
+* UserController
+
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-7e9ab7ffcb03b0ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
 
 	
 	
