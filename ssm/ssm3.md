@@ -1,18 +1,18 @@
 ## SpringBoot项目
-### 1.springboot搭建环境
-### 2.springboot参数接受 String User,接受参数名称匹配，自定义类型，传过来的key与自定义类型匹配
-### 3.分页:PageInfo PageHelper.startPage(页码，一页展示数量)，new PageInfo(查询到的集合)
-### 4.ajax请求到数据继续页面渲染
-### $(找到要操作的标签)根据需求决定要追加还是清空，执行不同的方法，html();append(要添加进去的元素)
-### 5.logback日志级别error>warn>info>debug
-### logging path,logging.level root=warn com.lanou=info---->spring.log文件,flume tail -F(追加一个带走一个)
-### 6.echarts可视化展示
-* 6.1 引js `<script src="https://unpkg.com/echarts@4.2.0-rc.2/dist/echarts.min.js"></script>`
-* 6.2 创建一个div作为容器	`<div id="main" style="width: 600px;height:400px;"></div>`
-* 6.3 初始化	`var myChart = echarts.init(document.getElementById('main'));	`
-* 6.4 设置需要的属性 http://echarts.baidu.com/examples/
-* 6.5 使用指定的配置	`myChart.setOption(option);`	
-### 7.servlet-->war包;springboot-->jar包 
+* 1.springboot搭建环境
+* 2.springboot参数接受 String User,接受参数名称匹配，自定义类型，传过来的key与自定义类型匹配
+* 3.分页:PageInfo PageHelper.startPage(页码，一页展示数量)，new PageInfo(查询到的集合)
+*  4.ajax请求到数据继续页面渲染
+*  $(找到要操作的标签)根据需求决定要追加还是清空，执行不同的方法，html();append(要添加进去的元素)
+*  5.logback日志级别error>warn>info>debug
+*  logging path,logging.level root=warn com.lanou=info---->spring.log文件,flume tail -F(追加一个带走一个)
+*  6.echarts可视化展示
+	* 6.1 引js `<`script src="https://unpkg.com/echarts@4.2.0-rc.2/dist/echarts.min.js"`>``<`/script`>`
+	* 6.2 创建一个div作为容器	`<`div id="main" style="width: 600px;height:400px;"`>``<`/div`>`
+	* 6.3 初始化	var myChart = echarts.init(document.getElementById('main'));	`
+	* 6.4 设置需要的属性 http://echarts.baidu.com/examples/
+	* 6.5 使用指定的配置	`myChart.setOption(option);`	
+*  7.servlet-->war包;springboot-->jar包 
 * 直接启动springboot项目，但是只要一停掉进程，或者关闭回话项目也会跟着停掉（前台运行模式）
 * spring-boot后台运行:`nohup java -jar ~/jar/secondboot-0.0.1-SNAPSHOT.jar  & ` 关闭:`kill -9`
 ### 8.跨域请求（域名=ip+port），ajax默认不允许跨域请求
