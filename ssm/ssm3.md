@@ -65,11 +65,11 @@
 * 5.url的ip:8080/ .html或者url
 
 ## mybatis
-### UserMapper:方法名（有参/无参）
+### 1.在dao层接口上声明抽象方法:方法名（有参/无参）
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-821a525208cfa050.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### resources/mapper/UserMapper.xml:
+### 2.在resources/mapper/下的对应文件中创建对应标签，通过id和dao层方法关联起来:
 
   `<select id="" parameterType="" resultMap="">sql语句</select>`
 * id:UserMapper的方法名
@@ -79,8 +79,8 @@
 	* 类型为String--> #{_parameter}
 	* 类型为 Integer-->#{任何字符均可}
 	* 类型为自定义类型,添加parameterType-->#{类对应的属性名}
-* Usercontroller: 返回sql查询结果后要做的操作
-### eg1:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键，联表查询(1对多)
+### 3.在controller中: 返回sql查询结果后要做的操作
+### eg:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键，联表查询(1对多)
 * UserMapper
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-4eb04b04b8f3a277.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
