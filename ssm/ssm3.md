@@ -75,10 +75,10 @@
 * id:UserMapper的方法名
 * parameterType:方法参数类型为自定义类型时需要用到
 * resultMap:为resultMap的id,resultMap中放置结果集的属性
-* sql中 where 表列名=方法参数类型为
-	* String--> #{_parameter}
-	* Integer-->#{任何字符均可}
-	* 自定义类型,添加parameterType-->#{类对应的属性名}
+* sql中 where 表列名=
+	* 类型为String--> #{_parameter}
+	* 类型为 Integer-->#{任何字符均可}
+	* 类型为自定义类型,添加parameterType-->#{类对应的属性名}
 * Usercontroller: 返回sql查询结果后要做的操作
 ### eg1:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键，联表查询(1对多)
 * UserMapper
