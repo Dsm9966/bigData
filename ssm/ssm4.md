@@ -4,47 +4,41 @@
 
 ### --单机模式----------------------------------
 * tar -zxf zookeeper-3.4.6.tar.gz 
-* cd zookeeper-3.4.6
-* cd conf/
+* cd zookeeper-3.4.6/conf
 * cp zoo_sample.cfg zoo.cfg
 * vim zoo.cfg 修改datadir="/home/hadoop/zookeeper-3.4.6/zkData"
-* cd ..
-* cd bin/
-* ./zkServer.sh
+* cd ~/bin/
 * ./zkServer.sh start
 * ./zkServer.sh status
 * jps
 * ./zkServer.sh stop
 ### --伪分布式-----------------------------------
 * 一台电脑
-
 * cd ~
 * mkdir zk
-* ./zkServer.sh stopcd zk
-* ./zkServer.sh stopcp -r zookeeper-3.4.6 zk2
-* ./zkServer.sh stopcp -r zookeeper-3.4.6 zk3
-* ./zkServer.sh stopmv zookeeper-3.4.6/ zk1
-* ./zkServer.sh stoppwd 复制
-* ./zkServer.sh stop对三个文件夹下的conf/zoo.cfg下进行修改：
-  * zk1中的dataDir=/home/hadoop/zk/zk1/zkData;
-	* zk2中的dataDir=/home/hadoop/zk/zk2/zkData; 
-	* clientPort=2182
-	* zk3中的dataDir=/home/hadoop/zk/zk3/zkData;
-	* clientPort=2183
+* mv zookeeper-3.4.6 zk
+* cd zk
+	* cp -r zookeeper-3.4.6 zk2
+	* cp -r  zookeeper-3.4.6 zk3
+	* mv  zookeeper-3.4.6/ zk1
+* 对三个文件夹下的conf/zoo.cfg下进行修改：
+ 	* zk1中的dataDir=/home/hadoop/zk/zk1/zkData
+	* zk2中的dataDir=/home/hadoop/zk/zk2/zkData;clientPort=2182
+	* zk3中的dataDir=/home/hadoop/zk/zk3/zkData;clientPort=2183
 
-* 添加上id			
-* echo "1">> /home/hadoop/zk/zk1/zkData/myid
-* echo "2">> /home/hadoop/zk/zk2/zkData/myid
-* echo "3">> /home/hadoop/zk/zk3/zkData/myid
+* 添加id			
+	* echo "1"`>` /home/hadoop/zk/zk1/zkData/myid
+	* echo "2"`>` /home/hadoop/zk/zk2/zkData/myid
+	* echo "3"`>` /home/hadoop/zk/zk3/zkData/myid
 
 * 对三个文件夹下的每个conf/zoo.cfg下进行添加（防止其中一个出现错误）：
 	* server.1=192.168.197.148:2888:3888
 	* server.2=192.168.197.148:2889:3889
 	* server.3=192.168.197.148:2890:3890
-
-* zk1/bin/zkServer.sh start-------follower（第一个开启没有参照物）
-* zk2/bin/zkServer.sh start-------leader(即使leader关闭，其他两个仍会选举出一个leader)
-* zk3/bin/zkServer.sh start-------follower
+* 开启
+	* zk1/bin/zkServer.sh start-------follower（第一个开启没有参照物）
+	* zk2/bin/zkServer.sh start-------leader(即使leader关闭，其他两个仍会选举出一个leader)
+	* zk3/bin/zkServer.sh start-------follower
 ### --完全分布-------------------------------------------
   * ----电脑1---
   * cd ~（为了保证伪分布式的完整性）
