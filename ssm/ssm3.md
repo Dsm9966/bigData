@@ -85,7 +85,7 @@ profiles:
 ### eg:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键(一对多),联表查询
 * UserMapper
 
-![image.png](https://upload-images.jianshu.io/upload_images/14466577-4eb04b04b8f3a277.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-4eb04b04b8f3a277.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
 * UserMapper.xml
 	* select
