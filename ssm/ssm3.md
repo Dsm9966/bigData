@@ -74,13 +74,13 @@
   `<select id="" parameterType="" resultMap="">sql语句</select>`
 * id:UserMapper的方法名
 * parameterType:方法参数类型为自定义类型时需要用到
-* resultMap:为resultMap的id,resultMap中放置结果集的属性
+* resultMap:为resultMap的id,resultMap中通过设置的映射将结果集中的字段放入对对应类型的属性中
 * sql中 where 表列名=
 	* 类型为String--> #{_parameter}
 	* 类型为 Integer-->#{任何字符均可}
 	* 类型为自定义类型,添加parameterType-->#{类对应的属性名}
 ### 3.在controller中: 返回sql查询结果后要做的操作
-### eg:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键，联表查询(1对多)
+### eg:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键(一对多),联表查询到对应结果集
 * UserMapper
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-4eb04b04b8f3a277.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
