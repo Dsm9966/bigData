@@ -3,7 +3,7 @@
 ## zookeeper配置
 
 ### --单机模式----------------------------------
-* tar -zxf zookeeper-3.4.6.tar.gz 
+* ```tar -zxf zookeeper-3.4.6.tar.gz ```
 * cd zookeeper-3.4.6/conf
 * cp zoo_sample.cfg zoo.cfg
 * vim zoo.cfg 修改datadir="/home/hadoop/zookeeper-3.4.6/zkData"
