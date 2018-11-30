@@ -74,13 +74,18 @@
   `<select id="" parameterType="" resultMap="">sql语句</select>`
 * id:UserMapper的方法名
 * parameterType:方法参数类型为自定义类型时需要用到
-* resultMap:为resultMap的id,resultMap中通过设置的映射将结果集中的字段放入对对应类型的属性中
+* resultMap:为resultMap的id,resultMap中放置结果集对应的属性
 * sql中 where 表列名=
 	* 类型为String--> #{_parameter}
 	* 类型为 Integer-->#{任何字符均可}
 	* 类型为自定义类型,添加parameterType-->#{类对应的属性名}
-### 3.在controller中: 返回sql查询结果后要做的操作
-### eg:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键(一对多),联表查询到对应结果集
+### 3.一对多的实现核心
+* 联表查询到对应的结果集
+* 设置resultMap通过设置的映射将结果集中字段放置在属性中
+	* 一方得到多方，在一方设置一个属性是集合类型保存多方数据
+	* 咋resultMap中，我们要将结果集中的数据放入到多方的属性集合中，
+	 普通的标签不行了，要是使用collection的标签，在标签中设置用哪个字段进行赋值
+### eg:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键(一对多),联表查询
 * UserMapper
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-4eb04b04b8f3a277.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
