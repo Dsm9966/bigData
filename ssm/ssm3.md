@@ -7,7 +7,7 @@
 ### 6.echarts可视化展示
 * 6.1 引js `<`script src="https://unpkg.com/echarts@4.2.0-rc.2/dist/echarts.min.js"`>` `<`/script`>`
 * 6.2 创建一个div作为容器	`<`div id="main" style="width: 600px;height:400px;"`>`  `<`/div`>`
-* 6.3 初始化	var myChart = echarts.init(document.getElementById('main'));	
+* 6.3 初始化	```var myChart = echarts.init(document.getElementById('main'));	```
 * 6.4 设置需要的属性 http://echarts.baidu.com/examples/
 * 6.5 使用指定的配置	myChart.setOption(option);	
 ### 7.servlet-->war包;springboot-->jar包 
