@@ -103,7 +103,10 @@
 
 	![image.png](https://upload-images.jianshu.io/upload_images/14466577-7e9ab7ffcb03b0ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-	
+## ajax
+
+![image.png](https://upload-images.jianshu.io/upload_images/14466577-6088c743459a00bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 	
 	
 	
