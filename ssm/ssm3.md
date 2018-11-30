@@ -83,7 +83,7 @@
 * 联表查询到对应的结果集
 * 设置resultMap通过设置的映射将结果集中字段放置在属性中
 	* 一方得到多方，在一方设置一个属性是集合类型保存多方数据
-	* 咋resultMap中，我们要将结果集中的数据放入到多方的属性集合中，
+	* 在resultMap中，我们要将结果集中的数据放入到多方的属性集合中，
 	 普通的标签不行了，要是使用collection的标签，在标签中设置用哪个字段进行赋值
 ### eg:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键(一对多),联表查询
 * UserMapper
