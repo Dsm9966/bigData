@@ -38,16 +38,22 @@
 	- [servlet/ajax](https://dsm9966.github.io/notebook/ssm/ssm1)
 	- [SpringBoot搭建](https://dsm9966.github.io/notebook/ssm/ssm2)
 	- [SpringBoot项目+mybatis](https://dsm9966.github.io/notebook/ssm/ssm3)
+-ZooKeeper
+	
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
 	- [2](https://dsm9966.github.io/notebook/review/review2)
 	- [3](https://dsm9966.github.io/notebook/review/review3)
 	- [4](https://dsm9966.github.io/notebook/review/review4)
 - 配置
+	- [azkaban](https://dsm9966.github.io/notebook/enviro/azkaban)
+	- [hive](https://dsm9966.github.io/notebook/enviro/hive)
+	- [mysql](https://dsm9966.github.io/notebook/enviro/mysql)
 	- [tomcat](https://dsm9966.github.io/notebook/enviro/tomcat)
+	- [zookeeper](https://dsm9966.github.io/notebook/zk/zk1)
 	- [单节点环境](https://dsm9966.github.io/notebook/enviro/jdkandhadoop)
 	- [伪分布](https://dsm9966.github.io/notebook/enviro/hadoop)
 	- [完全分布](https://dsm9966.github.io/notebook/enviro/hadoop1)
-	- [mysql](https://dsm9966.github.io/notebook/enviro/mysql)
-	- [hive](https://dsm9966.github.io/notebook/enviro/hive)
-	- [azkaban](https://dsm9966.github.io/notebook/enviro/azkaban)
+	
+	
+	
