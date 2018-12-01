@@ -45,6 +45,7 @@
 	* zk1/bin/zkServer.sh start-------follower（第一个开启没有参照物）
 	* zk2/bin/zkServer.sh start-------leader(即使leader关闭，其他两个仍会选举出一个leader)
 	* zk3/bin/zkServer.sh start-------follower 
+	
 ### 完全分布
 第一台电脑
 * vim zoo.cfg 中
@@ -75,7 +76,7 @@
 
 	![image.png](https://upload-images.jianshu.io/upload_images/14466577-e52a281135442b6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
-### --配置java环境-------------------------------------
+### 配置java环境
 * 1.创建maven项目
 
 * 2.选择
