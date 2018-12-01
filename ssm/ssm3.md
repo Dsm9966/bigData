@@ -10,12 +10,15 @@
 * 6.3 初始化	```var myChart = echarts.init(document.getElementById('main'));	```
 * 6.4 设置需要的属性 http://echarts.baidu.com/examples/
 * 6.5 使用指定的配置	myChart.setOption(option);	
+
 ### 7.servlet-->war包;springboot-->jar包 
 * 直接启动springboot项目，但是只要一停掉进程，或者关闭回话项目也会跟着停掉（前台运行模式）
 * spring-boot后台运行:nohup java -jar ~/jar/secondboot-0.0.1-SNAPSHOT.jar  &  关闭:kill -9
+
 ### 8.跨域请求（域名=ip+port），ajax默认不允许跨域请求;如果希望实现跨域请求，找到对应的请求方法，设置上@CrollOrigin(origins="*",maxAge=3600)，这样这个方法就允许跨域请求了
 	
 ![image.png](https://upload-images.jianshu.io/upload_images/14466577-139cd3f90e60b584.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ## springboot启动方式：
 *  1.执行main()方法
@@ -32,6 +35,7 @@
 	* 3.2 执行jar包 java -jar secondboot-0.0.1-SNAPSHOT.jar  
 	
 	![image.png](https://upload-images.jianshu.io/upload_images/14466577-4599bb0e8290c806.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	
 	
 ## 为了区分在本地还是远端（开发环境/生产环境）方便改配置：
 * 1.application.yml总配置(去掉logging.path) 
@@ -76,12 +80,14 @@ profiles:
 	* 类型为String--> #{_parameter}
 	* 类型为 Integer-->#{任何字符均可}
 	* 类型为自定义类型,添加parameterType-->#{类对应的属性名}
+	
 ### 3.一对多的实现核心
 * 联表查询到对应的结果集
 * 设置resultMap通过设置的映射将结果集中字段放置在属性中
 	* 一方得到多方，在一方设置一个属性是集合类型保存多方数据
 	* 在resultMap中，我们要将结果集中的数据放入到多方的属性集合中，
 	 普通的标签不行了，要是使用collection的标签，在标签中设置用哪个字段进行赋值
+	 
 ### eg:users表（userId,username,password）和orders表（orderid,orderno,user_id,count）user_id为外键(一对多),联表查询
 * UserMapper
 
