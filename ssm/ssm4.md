@@ -7,9 +7,10 @@
 * cd zookeeper-3.4.6/conf
 * cp zoo_sample.cfg zoo.cfg
 * vim zoo.cfg 修改datadir="/home/hadoop/zookeeper-3.4.6/zkData"
-* cd ~/bin/
 * ./zkServer.sh start
+
 * ./zkServer.sh status
+
 * jps
 * ./zkServer.sh stop
 ### --伪分布式-----------------------------------
@@ -95,7 +96,7 @@ bin/zkServer.sh status
 		<artifactId>zookeeper</artifactId>
 		<version>3.4.6</version>
 	</dependency>
-###----------------------------------------------------------------	
+
 
 
 
