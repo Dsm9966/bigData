@@ -4,20 +4,20 @@
 
 ### --单机模式----------------------------------
 * ```tar -zxf zookeeper-3.4.6.tar.gz ```
-* cd zookeeper-3.4.6/conf
-* cp zoo_sample.cfg zoo.cfg
-* vim zoo.cfg 修改datadir="/home/hadoop/zookeeper-3.4.6/zkData"
-* cd ~/bin/
-* ./zkServer.sh start
-* ./zkServer.sh status
-* jps
-* ./zkServer.sh stop
+* ```cd zookeeper-3.4.6/conf```
+* ```cp zoo_sample.cfg zoo.cfg```
+* vim zoo.cfg 修改```datadir="/home/hadoop/zookeeper-3.4.6/zkData"```
+* ```cd ~/bin/```
+* ```./zkServer.sh start```
+* ```./zkServer.sh status```
+* ```jps```
+* ```./zkServer.sh stop```
 ### --伪分布式-----------------------------------
 * 一台电脑
 * cd ~
-* mkdir zk
-* mv zookeeper-3.4.6 zk
-* cd zk
+* ```mkdir zk```
+* ```mv zookeeper-3.4.6 zk```
+* ```cd zk```
 	* cp -r zookeeper-3.4.6 zk2
 	* cp -r  zookeeper-3.4.6 zk3
 	* mv  zookeeper-3.4.6/ zk1
