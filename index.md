@@ -37,8 +37,8 @@
 - SSM
 	- [servlet/ajax](https://dsm9966.github.io/notebook/ssm/ssm1)
 	- [SpringBoot搭建](https://dsm9966.github.io/notebook/ssm/ssm2)
-	- [SpringBoot项目+mybatis](https://dsm9966.github.io/notebook/ssm/ssm3)
--ZooKeeper
+	- [SpringBoot项目+mybatis](https://dsm9966.github.io/notebook/ssm/ssm3)	
+- ZooKeeper
 	
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
@@ -50,7 +50,7 @@
 	- [hive](https://dsm9966.github.io/notebook/enviro/hive)
 	- [mysql](https://dsm9966.github.io/notebook/enviro/mysql)
 	- [tomcat](https://dsm9966.github.io/notebook/enviro/tomcat)
-	- [zookeeper](https://dsm9966.github.io/notebook/zk/zk1)
+	- [zookeeper](https://dsm9966.github.io/notebook/enviro/zk1)
 	- [单节点环境](https://dsm9966.github.io/notebook/enviro/jdkandhadoop)
 	- [伪分布](https://dsm9966.github.io/notebook/enviro/hadoop)
 	- [完全分布](https://dsm9966.github.io/notebook/enviro/hadoop1)

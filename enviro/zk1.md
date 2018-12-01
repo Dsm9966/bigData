@@ -89,6 +89,11 @@
 		`<`artifactId`>`zookeeper`<`/artifactId`>`
 		`<`version`>`3.4.6`<`/version`>`
 	`<`/dependency`>`
+* 启动成功标志
+
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-59fcc12fe6029537.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 
 
 
