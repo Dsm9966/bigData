@@ -2,7 +2,7 @@
 
 ## zookeeper配置
 
-### --单机模式----------------------------------
+### 单机模式
 * tar -zxf zookeeper-3.4.6.tar.gz
 * cd zookeeper-3.4.6/conf
 * cp zoo_sample.cfg zoo.cfg
@@ -12,8 +12,8 @@
 * ./zkServer.sh status
 
 * jps
-* ./zkServer.sh stop
-### --伪分布式-----------------------------------
+* ./zkServer.sh stop 
+### 伪分布式
 * 一台电脑
 * cd ~
 * mkdir zk
@@ -23,31 +23,30 @@
 	* cp -r  zookeeper-3.4.6 zk3
 	* mv  zookeeper-3.4.6/ zk1
 * 对三个文件夹下的conf/zoo.cfg下进行修改：
- 	* zk1中的dataDir=/home/hadoop/zk/zk1/zkData
-	* zk2中的dataDir=/home/hadoop/zk/zk2/zkData;clientPort=2182
-	* zk3中的dataDir=/home/hadoop/zk/zk3/zkData;clientPort=2183
+ 	* zk1
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-a12bee912f3612c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+	* zk2
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-512af05eea71dea8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	* zk3
+	![image.png](https://upload-images.jianshu.io/upload_images/14466577-a792c60c8d09a71e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 添加id			
 	* echo "1"`>` /home/hadoop/zk/zk1/zkData/myid
 	* echo "2"`>` /home/hadoop/zk/zk2/zkData/myid
 	* echo "3"`>` /home/hadoop/zk/zk3/zkData/myid
 
-* 对三个文件夹下的每个conf/zoo.cfg下进行添加（防止其中一个出现错误）：
-	* server.1=192.168.197.148:2888:3888
-	* server.2=192.168.197.148:2889:3889
-	* server.3=192.168.197.148:2890:3890
 * 开启
 	* zk1/bin/zkServer.sh start-------follower（第一个开启没有参照物）
 	* zk2/bin/zkServer.sh start-------leader(即使leader关闭，其他两个仍会选举出一个leader)
-	* zk3/bin/zkServer.sh start-------follower
-### --完全分布-------在伪分布基础上------------------------------------
+	* zk3/bin/zkServer.sh start-------follower 
+### 完全分布
 第一台电脑
 * vim zoo.cfg 中
 	* dataDir=/home/hadoop/zookeeper-3.4.6/zkData
 	* server.1=192.168.197.148:2888:3888
 	* server.2=192.168.197.137:2888:3888
 	* server.3=192.168.197.138:2888:3888
-	* (选举需要进行通信，通信需要端口，同步需要端口)
 * cd ~/zookeeper-3.4.6
 * mkdir zkData
 * echo "1" `>` zkData/myid
