@@ -39,7 +39,7 @@
 	- [SpringBoot搭建](https://dsm9966.github.io/notebook/ssm/ssm2)
 	- [SpringBoot项目+mybatis](https://dsm9966.github.io/notebook/ssm/ssm3)	
 - ZooKeeper
-	- [zk简介及客户端](https://dsm9966.github.io/notebook/zk/1)
+	- [zk简介及命令行](https://dsm9966.github.io/notebook/zk/1)
 	- [zk的javaAPI](https://dsm9966.github.io/notebook/zk/2)
 	- [动态感知上下线](https://dsm9966.github.io/notebook/zk/3)
 	
