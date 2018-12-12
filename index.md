@@ -42,6 +42,8 @@
 	- [zk简介及命令行](https://dsm9966.github.io/notebook/zk/1)
 	- [zk的javaAPI](https://dsm9966.github.io/notebook/zk/2)
 	- [动态感知上下线](https://dsm9966.github.io/notebook/zk/3)
+- scala
+	- [文档](https://dsm9966.github.io/notebook/hive/scala.docx)
 	
 - 小结
 	- [1](https://dsm9966.github.io/notebook/review/review1)
