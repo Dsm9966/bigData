@@ -35,7 +35,7 @@
 	- [GroupBy组内排序](https://dsm9966.github.io/notebook/mapReduce/23)
 	- [最终解释文档](https://dsm9966.github.io/notebook/mapReduce/03.docx)
 - scala
-	- [文档](https://dsm9966.github.io/notebook/scala/scala.docx)
+	- [day01文档;](https://dsm9966.github.io/notebook/scala/day01.docx)[pdf](https://dsm9966.github.io/notebook/scala/Scala-part1.docx)
 - SSM
 	- [servlet/ajax](https://dsm9966.github.io/notebook/ssm/ssm1)
 	- [SpringBoot搭建](https://dsm9966.github.io/notebook/ssm/ssm2)
